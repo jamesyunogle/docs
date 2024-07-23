@@ -1,0 +1,730 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>BTSE API Documentation</title>
+    <link href="../../images/favicon-3eb77247.ico" rel="icon" type="image/ico" />
+    <style>
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cpf {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s, .highlight .sa, .highlight .dl {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf, .highlight .fm {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv, .highlight .vm {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #f92672;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+    </style>
+    <link href="../../stylesheets/screen-bcf56b31.css" rel="stylesheet" media="screen" />
+    <link href="../../stylesheets/print-953e3353.css" rel="stylesheet" media="print" />
+      <script src="../../javascripts/all-a9fde460.js"></script>
+
+  </head>
+
+  <body class="streaming streaming_cn streaming_cn_index" data-languages="[&quot;json&quot;]">
+    <a href="#" id="nav-button">
+      <span>
+        <img src="../../images/navbar-cad8cdcb.png" alt="" />
+      </span>
+    </a>
+    <header>
+    <div class="flex_box">
+      <img src="../../images/logo-d7d2b532.svg" class="logo" alt="" />
+      <div class="nav-row-wrap">
+        <div id="navBox" class="nav_box"></div>
+        <div id="menuDropdownBtn" class="noselect menu-dropdown-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          <div id="menuDropdown" class="menu-dropdown hide"></div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+    <div class="toc-wrapper">
+        <div class="lang-selector">
+              <a href="#" data-language-name="json">json</a>
+        </div>
+        <div class="search">
+          <input type="text" class="search" id="input-search" placeholder="Search">
+        </div>
+        <ul class="search-results"></ul>
+      <ul id="toc" class="toc-list-h1">
+          <li>
+            <a href="#185368440e" class="toc-h1 toc-link" data-title="更新日志">更新日志</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#1-2-2023-5-17" class="toc-h2 toc-link" data-title="版本 1.2（2023年5月17日）">版本 1.2（2023年5月17日）</a>
+                  </li>
+                  <li>
+                    <a href="#1-1-2022-3-16" class="toc-h2 toc-link" data-title="版本 1.1（2022年3月16日）">版本 1.1（2022年3月16日）</a>
+                  </li>
+                  <li>
+                    <a href="#1-0-2021-11-19" class="toc-h2 toc-link" data-title="版本 1.0（2021年11月19日）">版本 1.0（2021年11月19日）</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#153042ed9e" class="toc-h1 toc-link" data-title="概述">概述</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#api" class="toc-h2 toc-link" data-title="生成 API 密钥">生成 API 密钥</a>
+                  </li>
+                  <li>
+                    <a href="#00a2309ce3" class="toc-h2 toc-link" data-title="终端节点">终端节点</a>
+                  </li>
+                  <li>
+                    <a href="#cd7685def5" class="toc-h2 toc-link" data-title="身份验证">身份验证</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#5f059df046" class="toc-h1 toc-link" data-title="工作流程">工作流程</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#otc-2" class="toc-h2 toc-link" data-title="流式 OTC">流式 OTC</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#websocket" class="toc-h1 toc-link" data-title="WebSocket 数据流">WebSocket 数据流</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#ping-pong" class="toc-h2 toc-link" data-title="Ping/Pong">Ping/Pong</a>
+                  </li>
+                  <li>
+                    <a href="#cd7685def5-2" class="toc-h2 toc-link" data-title="身份验证">身份验证</a>
+                  </li>
+                  <li>
+                    <a href="#42034b88ca" class="toc-h2 toc-link" data-title="报价数据流">报价数据流</a>
+                  </li>
+              </ul>
+          </li>
+      </ul>
+        <ul class="toc-footer">
+        </ul>
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        <h1 id='185368440e'>更新日志</h1><h2 id='1-2-2023-5-17'>版本 1.2（2023年5月17日）</h2>
+<ul>
+<li>添加 <a href="#ping-pong"><code>Ping/Pong</code></a> 用于 WebSocket 数据流</li>
+</ul>
+<h2 id='1-1-2022-3-16'>版本 1.1（2022年3月16日）</h2>
+<ul>
+<li>添加请求参数 <a href="#42034b88ca"><code>quote</code></a> 以允许返回一个方向的报价。</li>
+</ul>
+<h2 id='1-0-2021-11-19'>版本 1.0（2021年11月19日）</h2>
+<ul>
+<li>添加 <a href="#42034b88ca"><code>报价数据流</code></a> WebSocket 主题以订阅 OTC 市场上的价格数据流</li>
+</ul>
+<h1 id='153042ed9e'>概述</h1><h2 id='api'>生成 API 密钥</h2>
+<p>在使用经过身份验证的 API 之前，您需要在 BTSE 平台上创建一个 API 密钥。要创建 API 密钥，您可以按照以下步骤操作：</p>
+
+<ul>
+<li>使用用户名/电子邮件和密码登录 BTSE 网站</li>
+<li>单击右上角的“账户”</li>
+<li>选择 API 选项卡</li>
+<li>单击“新建 API”按钮以创建 API 密钥和密码。 (注意：密码将只出现一次)</li>
+<li>使用您的 API 密钥和密码构建签名。</li>
+</ul>
+<h2 id='00a2309ce3'>终端节点</h2><h3 id='otc'>流式 OTC 报价</h3>
+<ul>
+<li>生产
+
+<ul>
+<li>WebSocket
+
+<ul>
+<li><code>wss://ws.btse.com/ws/otc</code></li>
+</ul></li>
+</ul></li>
+<li>测试网
+
+<ul>
+<li>WebSocket
+
+<ul>
+<li><code>wss://testws.btse.io/ws/otc</code></li>
+</ul></li>
+</ul></li>
+</ul>
+<h2 id='cd7685def5'>身份验证</h2>
+<ul>
+<li><p>API 密钥（request-api）</p>
+
+<ul>
+<li>参数名称：<code>request-api</code>，位置：头部。API 密钥是从 BTSE 平台获取的string</li>
+</ul></li>
+<li><p>API 密钥（request-nonce）</p>
+
+<ul>
+<li>参数名称：<code>request-nonce</code>，位置：头部。以长格式表示的当前时间戳</li>
+</ul></li>
+<li><p>API 密钥（request-sign）</p>
+
+<ul>
+<li>参数名称：<code>request-sign</code>，位置：头部。基于以下算法生成的复合签名：Signature=HMAC.Sha384 (secretkey, (urlpath + request-nonce + bodyStr)) (注意：当没有数据时，bodyStr = &#39;&#39;）：</li>
+</ul></li>
+</ul>
+<h1 id='5f059df046'>工作流程</h1><h2 id='otc-2'>流式 OTC</h2>
+<ul>
+<li>如果需要，通过 <code>市场概要</code> OTC API 获取市场信息。</li>
+<li>订阅 <code>报价数据流</code> 以定期获取流式的 OTC 报价和报价 ID。</li>
+<li>请参考 <code>OTC</code> 部分以了解接受报价的 API
+
+<ul>
+<li>如果用户选择接受报价，报价将被发送到 BTSE（报价已接受）</li>
+<li>如果 BTSE 接受报价，则交易已完成（交易已完成）</li>
+<li>如果 BTSE 拒绝报价，则 BTSE 将以拒绝原因更新的报价回应</li>
+</ul></li>
+</ul>
+<h1 id='websocket'>WebSocket 数据流</h1><h2 id='ping-pong'>Ping/Pong</h2>
+<p>对于我们的所有 WebSocket 服务器，只需发送“ping”消息，WebSocket 服务器将在 WebSocket 连接已建立且处于活动状态时回应“pong”消息。</p>
+
+<blockquote>
+<p>请求</p>
+</blockquote>
+<div class="highlight"><pre class="highlight plaintext"><code>ping
+</code></pre></div>
+<blockquote>
+<p>响应</p>
+</blockquote>
+<div class="highlight"><pre class="highlight plaintext"><code>pong
+</code></pre></div><h2 id='cd7685def5-2'>身份验证</h2>
+<blockquote>
+<p>请求</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"op"</span><span class="p">:</span><span class="s2">"authKeyExpires"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"args"</span><span class="p">:[</span><span class="s2">"APIKey"</span><span class="p">,</span><span class="w"> </span><span class="s2">"nonce"</span><span class="p">,</span><span class="w"> </span><span class="s2">"signature"</span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<p>身份验证 WebSocket 会话以订阅经过身份验证的 WebSocket 主题。假设我们有以下值：</p>
+
+<ul>
+<li><code>request-nonce</code>: 1624985375123</li>
+<li><code>request-api</code>: 4e9536c79f0fdd72bf04f2430982d3f61d9d76c996f0175bbba470d69d59816x</li>
+<li><code>secret</code>: 848db84ac252b6726e5f6e7a711d9c96d9fd77d020151b45839a5b59c37203bx</li>
+</ul>
+
+<p>我们的订阅请求将是：</p>
+<div class="highlight"><pre class="highlight plaintext"><code>{
+  "op":"authKeyExpires",
+  "args":["4e9536c79f0fdd72bf04f2430982d3f61d9d76c996f0175bbba470d69d59816x", "1624985375123", "c410d38c681579adb335885800cff24c66171b7cc8376cfe43da1408c581748156b89bcc5a115bb496413bda481139fb"]
+}
+</code></pre></div><h3 id='1f9ac54b15'>请求参数</h3>
+<p>下面详细说明了需要发送的参数。</p>
+
+<table><thead>
+<tr>
+<th>索引</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>描述</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>0</td>
+<td>string</td>
+<td>Yes</td>
+<td>第一个参数是 API 密钥</td>
+</tr>
+<tr>
+<td>1</td>
+<td>long</td>
+<td>Yes</td>
+<td>Nonce，即当前时间戳</td>
+</tr>
+<tr>
+<td>2</td>
+<td>string</td>
+<td>Yes</td>
+<td>生成的签名</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>生成签名</p>
+</blockquote>
+<div class="highlight"><pre class="highlight shell tab-shell"><code><span class="nb">echo</span> <span class="nt">-n</span> <span class="s2">"/ws/otc1624985375123"</span>  | openssl dgst <span class="nt">-sha384</span> <span class="nt">-hmac</span> <span class="s2">"848db84ac252b6726e5f6e7a711d9c96d9fd77d020151b45839a5b59c37203bx"</span>
+<span class="o">(</span>stdin<span class="o">)=</span> c410d38c681579adb335885800cff24c66171b7cc8376cfe43da1408c581748156b89bcc5a115bb496413bda481139fb
+</code></pre></div><h2 id='42034b88ca'>报价数据流</h2>
+<blockquote>
+<p>请求</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"op"</span><span class="p">:</span><span class="w"> </span><span class="s2">"quote"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"symbol"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BTC-USD"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"side"</span><span class="p">:</span><span class="w"> </span><span class="s2">"buy"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"clOrderId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ClientOrder1"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"quantity"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"quantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BTC"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div><div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"op"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unsubscribe-quote"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"symbol"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BTC-USD"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"clOrderId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ClientOrder1"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"quantity"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"quantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BTC"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div><div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"op"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unsubscribe-quote-all"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>响应</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"topic"</span><span class="p">:</span><span class="w"> </span><span class="s2">"quote"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"buyQuoteId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"015f05ba-1d55-46d7-94d9-214229414ae7"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"sellQuoteId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0683a41a-a2ad-467b-99b3-241f3ab0cec4"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"clOrderId"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"buyQuantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"buyUnitPrice"</span><span class="p">:</span><span class="w"> </span><span class="mf">47865.580838</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"buyTotalAmount"</span><span class="p">:</span><span class="w"> </span><span class="mf">478655.80838</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"sellQuantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"sellUnitPrice"</span><span class="p">:</span><span class="w"> </span><span class="mf">47649.40351972</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"sellTotalAmount"</span><span class="p">:</span><span class="w"> </span><span class="mf">476494.0352</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"reason"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre></div>
+<p>通过订阅 <code>quote</code> WebSocket，接收报价数据流。WebSocket 主题将不断向订阅者推送新价格。要接受报价，请使用 <code>/accept</code> API 指示买入或卖出报价 ID。</p>
+<h3 id='1f9ac54b15-2'>请求参数</h3>
+<table><thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>描述</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>op</td>
+<td>string</td>
+<td>Yes</td>
+<td>操作，此处为 <code>quote</code>、<code>unsubscribe-quote</code> 或 <code>unsubscribe-quote-all</code></td>
+</tr>
+<tr>
+<td>symbol</td>
+<td>string</td>
+<td>Yes</td>
+<td>市场标志，参考 <code>getMarkets</code> API</td>
+</tr>
+<tr>
+<td>side</td>
+<td>string</td>
+<td>No</td>
+<td>报价方向，<code>buy</code> 或 <code>sell</code>，区分大小写。如果此字段为空/为null，则将返回两个方向的报价</td>
+</tr>
+<tr>
+<td>clOrderId</td>
+<td>string</td>
+<td>No</td>
+<td>客户自定义订单 ID</td>
+</tr>
+<tr>
+<td>quantity</td>
+<td>double</td>
+<td>Yes</td>
+<td>订单数量</td>
+</tr>
+<tr>
+<td>currency</td>
+<td>string</td>
+<td>Yes</td>
+<td>可以是基础货币或报价货币。如果指定基础货币，那么报价流将以响应形式返回</td>
+</tr>
+</tbody></table>
+<h3 id='05a22d5a79'>响应内容</h3>
+<table><thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>描述</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>topic</td>
+<td>string</td>
+<td>Yes</td>
+<td>WebSocket 主题</td>
+</tr>
+<tr>
+<td>buyQuoteId</td>
+<td>string</td>
+<td>No</td>
+<td>买方的报价 ID。如果该值为空/为null，则表示您的 WebSocket 流未经身份验证或您未订阅此方向</td>
+</tr>
+<tr>
+<td>sellQuoteId</td>
+<td>string</td>
+<td>No</td>
+<td>卖方的报价 ID。如果该值为空/为null，则表示您的 WebSocket 流未经身份验证或您未订阅此方向</td>
+</tr>
+<tr>
+<td>clOrderId</td>
+<td>string</td>
+<td>Yes</td>
+<td>用户自定义订单 ID</td>
+</tr>
+<tr>
+<td>buyQuantity</td>
+<td>double</td>
+<td>No</td>
+<td>基于报价请求的购买数量。如果该值为null，则表示您未订阅此方向</td>
+</tr>
+<tr>
+<td>buyUnitPrice</td>
+<td>double</td>
+<td>No</td>
+<td>基础符号每单位的单价。如果该值为null，则表示您未订阅此方向</td>
+</tr>
+<tr>
+<td>buyTotalAmount</td>
+<td>double</td>
+<td>No</td>
+<td>以报价货币支付的总价格。如果该值为null，则表示您未订阅此方向</td>
+</tr>
+<tr>
+<td>sellQuantity</td>
+<td>double</td>
+<td>No</td>
+<td>基于报价请求的销售数量。如果该值为null，则表示您未订阅此方向</td>
+</tr>
+<tr>
+<td>sellUnitPrice</td>
+<td>double</td>
+<td>No</td>
+<td>基础符号每单位的单价。如果该值为null，则表示您未订阅此方向</td>
+</tr>
+<tr>
+<td>sellTotalAmount</td>
+<td>double</td>
+<td>No</td>
+<td>以报价货币支付的总价格。如果该值为null，则表示您未订阅此方向</td>
+</tr>
+<tr>
+<td>status</td>
+<td>string</td>
+<td>No</td>
+<td>响应状态。如果该值为null，则表示您未订阅此方向</td>
+</tr>
+<tr>
+<td>reason</td>
+<td>string</td>
+<td>No</td>
+<td>如果返回错误，reason 字段将包含错误的原因</td>
+</tr>
+</tbody></table>
+
+<p></section></p>
+
+      </div>
+      <div class="dark-box">
+          <div class="lang-selector">
+                <a href="#" data-language-name="json">json</a>
+          </div>
+      </div>
+    </div>
+    <script>
+const DEFAULT_LANG = 'en';
+const IS_DEV = false;
+const DOCS_PREFIX = IS_DEV ? '/' : '/docs/';
+const TAB_MAP = {
+  spot: {
+    en: 'Spot',
+    cn: '现货'
+  },
+  futures: {
+    en: 'Futures',
+    cn: '期货'
+  },
+  futuresV2_2: {
+    en: 'FuturesV2.2',
+    cn: '期货V2.2'
+  },
+  otc: {
+    en: 'OTC',
+    cn: '场外交易'
+  },
+  wallet: {
+    en: 'Wallet/Convert/Transfer',
+    cn: '钱包/转换/转账'
+  },
+  streaming: {
+    en: 'Streaming',
+    cn: '數據流'
+  },
+  fix: {
+    en: 'FIX',
+    cn: 'FIX'
+  },
+  earn: {
+    en: 'Earn',
+    cn: '賺幣'
+  }
+};
+
+function getUrlRelativePath() {
+  let url = document.location.toString();
+  let arrUrl = url.split('//');
+  let start = arrUrl[1].indexOf('/');
+  let relUrl = arrUrl[1].substring(start);
+  if (relUrl.indexOf('?') !== -1) {
+    relUrl = relUrl.split("?")[0];
+  }
+  if (relUrl.indexOf('#') !== -1) {
+    relUrl = relUrl.split('#')[0];
+  }
+  return relUrl;
+}
+
+function capitalizeFirstLetter(s) {
+  return s.charAt(0).toUpperCase() + s.slice(1);
+}
+
+function getLang() {
+  const url = getUrlRelativePath();
+  const isEN = url.indexOf('cn') === -1;
+  return isEN ? 'en' : 'cn';
+}
+
+function getTabTemplate(isTab, href, tabKey, tabText) {
+  const classList = isTab ? 'nav_cell nav_tab' : 'menu-row'
+  const idPrefix = isTab ? 'nav_link_' : 'menu-link-'
+  const linkClass = isTab ? 'nav-link' : 'menu-link'
+  return `
+    <span class="${classList}">
+      <a href="${href}" id="${idPrefix}${tabKey}" class="${linkClass}">${tabText}</a>
+    </span>
+  `
+}
+
+function generateNavHtml(lang, isTab) {
+  return Object.keys(TAB_MAP).map(tabKey => {
+    const tabText = TAB_MAP[tabKey][lang] || capitalizeFirstLetter(tabKey);
+    const href = `${DOCS_PREFIX}${tabKey}/${lang}/`;
+    return getTabTemplate(isTab, href, tabKey, tabText);
+  })
+}
+
+function addChangeLanguageLink(lang) {
+  // add change lang link in navbar.
+  const langText = lang === 'en' ? '中文' : 'English';
+  const langHref = lang === 'en' ? location.href.replace('/en/', '/cn/') : location.href.replace('/cn/', '/en/');
+  const langLink = `<a class="change-lang-link" href="${langHref}">${langText}</a>`;
+  $('#navBox').append(`<span class="nav_cell">${langLink}</span>`);
+}
+
+$(function() {
+  const lang = getLang();
+  $('#navBox').html(generateNavHtml(lang, true));
+  $('#menuDropdown').html(generateNavHtml(lang, false));
+  const tabList = Object.keys(TAB_MAP);
+  for (let i = 0; i < tabList.length; i ++) {
+    const tabKey = tabList[i];
+    if (location.href.indexOf(`/${tabKey}/`) > 0) {
+      $('.nav-link').removeClass('current');
+      $(`#nav_link_${tabKey}`).addClass('current');
+      $('.menu-link').removeClass('current');
+      $(`#menu-link-${tabKey}`).addClass('current');
+      break;
+    }
+  }
+  $('#menuDropdownBtn').click(() => {
+    $('.menu-dropdown').toggleClass('hide');
+  });
+  addChangeLanguageLink(lang);
+});
+  </script>
+  </body>
+</html>

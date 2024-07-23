@@ -1,0 +1,1457 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>BTSE API Documentation</title>
+    <link href="../../images/favicon-3eb77247.ico" rel="icon" type="image/ico" />
+    <style>
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cpf {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s, .highlight .sa, .highlight .dl {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf, .highlight .fm {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv, .highlight .vm {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #f92672;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+    </style>
+    <link href="../../stylesheets/screen-bcf56b31.css" rel="stylesheet" media="screen" />
+    <link href="../../stylesheets/print-953e3353.css" rel="stylesheet" media="print" />
+      <script src="../../javascripts/all-a9fde460.js"></script>
+
+  </head>
+
+  <body class="wallet wallet_cn wallet_cn_index" data-languages="[&quot;json&quot;]">
+    <a href="#" id="nav-button">
+      <span>
+        <img src="../../images/navbar-cad8cdcb.png" alt="" />
+      </span>
+    </a>
+    <header>
+    <div class="flex_box">
+      <img src="../../images/logo-d7d2b532.svg" class="logo" alt="" />
+      <div class="nav-row-wrap">
+        <div id="navBox" class="nav_box"></div>
+        <div id="menuDropdownBtn" class="noselect menu-dropdown-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          <div id="menuDropdown" class="menu-dropdown hide"></div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+    <div class="toc-wrapper">
+        <div class="lang-selector">
+              <a href="#" data-language-name="json">json</a>
+        </div>
+        <div class="search">
+          <input type="text" class="search" id="input-search" placeholder="Search">
+        </div>
+        <ul class="search-results"></ul>
+      <ul id="toc" class="toc-list-h1">
+          <li>
+            <a href="#185368440e" class="toc-h1 toc-link" data-title="更新日志">更新日志</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#1-1-2-2024-4-10" class="toc-h2 toc-link" data-title="版本 1.1.2 (2024年4月10日)">版本 1.1.2 (2024年4月10日)</a>
+                  </li>
+                  <li>
+                    <a href="#1-1-1-2024-04-08" class="toc-h2 toc-link" data-title="版本 1.1.1 (2024年04月08日)">版本 1.1.1 (2024年04月08日)</a>
+                  </li>
+                  <li>
+                    <a href="#1-1-0-2022-11-16" class="toc-h2 toc-link" data-title="版本 1.1.0 (2022年11月16日)">版本 1.1.0 (2022年11月16日)</a>
+                  </li>
+                  <li>
+                    <a href="#1-0-4-2022-8-25" class="toc-h2 toc-link" data-title="版本 1.0.4 (2022年8月25日)">版本 1.0.4 (2022年8月25日)</a>
+                  </li>
+                  <li>
+                    <a href="#1-0-3-2022-5-13" class="toc-h2 toc-link" data-title="版本 1.0.3 (2022年5月13日)">版本 1.0.3 (2022年5月13日)</a>
+                  </li>
+                  <li>
+                    <a href="#1-0-2-2022-3-16" class="toc-h2 toc-link" data-title="版本 1.0.2 (2022年3月16日)">版本 1.0.2 (2022年3月16日)</a>
+                  </li>
+                  <li>
+                    <a href="#1-0-1-2022-1-25" class="toc-h2 toc-link" data-title="版本 1.0.1 (2022年1月25日)">版本 1.0.1 (2022年1月25日)</a>
+                  </li>
+                  <li>
+                    <a href="#1-0-0-2022-1-13" class="toc-h2 toc-link" data-title="版本 1.0.0 (2022年1月13日)">版本 1.0.0 (2022年1月13日)</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#5060421d15" class="toc-h1 toc-link" data-title="概览">概览</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#api" class="toc-h2 toc-link" data-title="生成 API 密钥">生成 API 密钥</a>
+                  </li>
+                  <li>
+                    <a href="#2a1cad5f9e" class="toc-h2 toc-link" data-title="端点">端点</a>
+                  </li>
+                  <li>
+                    <a href="#cd7685def5" class="toc-h2 toc-link" data-title="身份验证">身份验证</a>
+                  </li>
+                  <li>
+                    <a href="#887e990e90" class="toc-h2 toc-link" data-title="速率限制">速率限制</a>
+                  </li>
+                  <li>
+                    <a href="#api-2" class="toc-h2 toc-link" data-title="API 状态码">API 状态码</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#fafa833f79" class="toc-h1 toc-link" data-title="公共端点">公共端点</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#40af277644" class="toc-h2 toc-link" data-title="查询货币的可用加密网络列表">查询货币的可用加密网络列表</a>
+                  </li>
+                  <li>
+                    <a href="#9dbf83fe7f" class="toc-h2 toc-link" data-title="查询资产间的汇率">查询资产间的汇率</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#a3d42f9b9f" class="toc-h1 toc-link" data-title="钱包端点">钱包端点</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#0bed682e6f" class="toc-h2 toc-link" data-title="查询钱包余额">查询钱包余额</a>
+                  </li>
+                  <li>
+                    <a href="#bc1c4a9961" class="toc-h2 toc-link" data-title="查询钱包历史">查询钱包历史</a>
+                  </li>
+                  <li>
+                    <a href="#b8b48f9d66" class="toc-h2 toc-link" data-title="创建钱包地址">创建钱包地址</a>
+                  </li>
+                  <li>
+                    <a href="#b13bcdd685" class="toc-h2 toc-link" data-title="获取钱包地址">获取钱包地址</a>
+                  </li>
+                  <li>
+                    <a href="#debc5b7760" class="toc-h2 toc-link" data-title="提款资金">提款资金</a>
+                  </li>
+                  <li>
+                    <a href="#0ab39c1d97" class="toc-h2 toc-link" data-title="查询钱包操作的可用货币列表">查询钱包操作的可用货币列表</a>
+                  </li>
+                  <li>
+                    <a href="#f5b29b7330" class="toc-h2 toc-link" data-title="转换资金">转换资金</a>
+                  </li>
+                  <li>
+                    <a href="#fff748076e" class="toc-h2 toc-link" data-title="转账资金">转账资金</a>
+                  </li>
+                  <li>
+                    <a href="#dfc184460c" class="toc-h2 toc-link" data-title="子帐号转账历史纪录">子帐号转账历史纪录</a>
+                  </li>
+              </ul>
+          </li>
+      </ul>
+        <ul class="toc-footer">
+        </ul>
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        <h1 id='185368440e'>更新日志</h1><h2 id='1-1-2-2024-4-10'>版本 1.1.2 (2024年4月10日)</h2>
+<ul>
+<li>更新 <a href="#bc1c4a9961"><code>查询钱包历史</code></a> 中的 <code>status</code> 與 <code>type</code> 的描述</li>
+</ul>
+<h2 id='1-1-1-2024-04-08'>版本 1.1.1 (2024年04月08日)</h2>
+<ul>
+<li>新增<a href="#dfc184460c"><code>子帐号转帐历史纪录</code></a>API</li>
+</ul>
+<h2 id='1-1-0-2022-11-16'>版本 1.1.0 (2022年11月16日)</h2>
+<ul>
+<li>[重要] BTSE 将在 <strong>2022年12月</strong> 更改期货市场命名约定，以便为零售用户提供更多清晰度，以下是规则：
+
+<ul>
+<li>将永续市场的后缀从 <code>PFC</code> 更改为 <code>PERP</code>（例如：BTCPFC -&gt; BTC-PERP）</li>
+<li>将基于时间的市场的后缀从 <code>交货月份+年份</code> 更改为 <code>结算日期 (YYMMDD)</code>（例如：BTCZ22 -&gt; BTC-221230）</li>
+<li>在 <a href="#bc1c4a9961"><code>查询钱包历史</code></a> 和 <a href="#fff748076e"><code>转账资金</code></a> 中增加了一个新的可选查询参数 <code>useNewSymbolNaming</code>，如果用户想要使用新的市场名称</li>
+</ul></li>
+</ul>
+<h2 id='1-0-4-2022-8-25'>版本 1.0.4 (2022年8月25日)</h2>
+<ul>
+<li>调整API中货币的参数描述：<a href="#b13bcdd685"><code>获取钱包地址</code></a>，<a href="#b8b48f9d66"><code>创建钱包地址</code></a>。</li>
+</ul>
+<h2 id='1-0-3-2022-5-13'>版本 1.0.3 (2022年5月13日)</h2>
+<ul>
+<li>为 <a href="#debc5b7760"><code>提款资金</code></a> 添加参数 <code>includeWithdrawFee</code>，以设置费用将包含/额外增加。</li>
+</ul>
+<h2 id='1-0-2-2022-3-16'>版本 1.0.2 (2022年3月16日)</h2>
+<ul>
+<li><a href="#debc5b7760"><code>提款资金</code></a> 支持的最大小数位数为8，如果超过将返回 <code>CRYPTO_WITHDRAW_INVALID_AMOUNT (错误代码: 3506)</code></li>
+</ul>
+<h2 id='1-0-1-2022-1-25'>版本 1.0.1 (2022年1月25日)</h2>
+<ul>
+<li>添加 <a href="#9dbf83fe7f"><code>查询资产间的汇率</code></a> API以获取资产之间的当前汇率</li>
+</ul>
+<h2 id='1-0-0-2022-1-13'>版本 1.0.0 (2022年1月13日)</h2>
+<ul>
+<li>将钱包相关的端点迁移到此部分</li>
+</ul>
+<h1 id='5060421d15'>概览</h1><h2 id='api'>生成 API 密钥</h2>
+<p>您需要在 BTSE 平台上创建一个 API 密钥，然后才能使用认证的 API。要创建 API 密钥，您可以按照以下步骤操作：</p>
+
+<ul>
+<li>使用您的用户名/电子邮件和密码登录 BTSE 网站</li>
+<li>点击右上角的“帐户”</li>
+<li>选择 API 选项卡</li>
+<li>点击 <code>新建 API</code> 按钮创建 API 密钥和密码短语。（注意：密码短语只会出现一次）</li>
+<li>使用您的 API 密钥和密码短语构建一个签名。</li>
+</ul>
+<h2 id='2a1cad5f9e'>端点</h2>
+<ul>
+<li>生产
+
+<ul>
+<li>HTTP
+
+<ul>
+<li><code>https://api.btse.com/spot</code></li>
+</ul></li>
+<li>Websocket
+
+<ul>
+<li><code>wss://ws.btse.com/ws/spot</code></li>
+</ul></li>
+<li>Websocket (用于订单簿流)
+
+<ul>
+<li><code>wss://ws.btse.com/ws/oss/spot</code> (用于订单簿增量更新流)</li>
+</ul></li>
+</ul></li>
+<li>测试网络
+
+<ul>
+<li>HTTP
+
+<ul>
+<li><code>https://testapi.btse.io/spot</code></li>
+</ul></li>
+<li>Websocket
+
+<ul>
+<li><code>wss://testws.btse.io/ws/spot</code></li>
+</ul></li>
+<li>Websocket (用于订单簿流)</li>
+<li><code>wss://testws.btse.io/ws/oss/spot</code> (用于订单簿增量更新流)</li>
+</ul></li>
+</ul>
+<h2 id='cd7685def5'>身份验证</h2>
+<ul>
+<li><p>API 密钥 (request-api)</p>
+
+<ul>
+<li>参数名称：<code>request-api</code>，在：头部。API 密钥以字符串形式从 BTSE 平台获得</li>
+</ul></li>
+<li><p>API 密钥 (request-nonce)</p>
+
+<ul>
+<li>参数名称：<code>request-nonce</code>，在：头部。当前时间戳的长格式表示</li>
+</ul></li>
+<li><p>API 密钥 (request-sign)</p>
+
+<ul>
+<li>参数名称：<code>request-sign</code>，在：头部。基于以下算法产生的复合签名：Signature=HMAC.Sha384 (secretkey, (urlpath + request-nonce + bodyStr)) (注意：当没有数据时 bodyStr = &#39;&#39;):</li>
+</ul></li>
+</ul>
+<h3 id='1'>示例 1：获取钱包</h3>
+<blockquote>
+<p><strong>HMAC SHA384 签名</strong></p>
+</blockquote>
+<div class="highlight"><pre class="highlight shell tab-shell"><code><span class="nv">$ </span><span class="nb">echo</span> <span class="nt">-n</span> <span class="s2">"/api/v3.2/user/wallet1624984297330"</span> | openssl dgst <span class="nt">-sha384</span> <span class="nt">-hmac</span> <span class="s2">"848db84ac252b6726e5f6e7a711d9c96d9fd77d020151b45839a5b59c37203bx"</span>
+<span class="o">(</span>stdin<span class="o">)=</span> 14b986706a4368221e0af14a6725377161805e7a57d568220478cb3590ce532d4fad4ac68e6c02a14afced6a0619bfd3
+</code></pre></div>
+<ul>
+<li>获取钱包的端点是 <code>https://api.btse.com/spot/api/v3.2/user/wallet</code></li>
+<li>假设我们有以下值：
+
+<ul>
+<li>request-nonce: <code>1624984297330</code></li>
+<li>request-api: <code>4e9536c79f0fdd72bf04f2430982d3f61d9d76c996f0175bbba470d69d59816x</code></li>
+<li>secret: <code>848db84ac252b6726e5f6e7a711d9c96d9fd77d020151b45839a5b59c37203bx</code></li>
+<li>Path: <code>/api/v3.2/user/wallet</code></li>
+</ul></li>
+<li>生成的签名将是：
+
+<ul>
+<li>request-sign: <code>14b986706a4368221e0af14a6725377161805e7a57d568220478cb3590ce532d4fad4ac68e6c02a14afced6a0619bfd3</code></li>
+</ul></li>
+</ul>
+<h2 id='887e990e90'>速率限制</h2>
+<ul>
+<li>以下速率限制正在执行：</li>
+</ul>
+
+<p>BTSE 的速率限制如下：</p>
+
+<p><strong>钱包操作</strong></p>
+
+<ul>
+<li>每个用户：<code>5次请求/秒</code></li>
+</ul>
+<h2 id='api-2'>API 状态码</h2>
+<p>每个 API 将返回以下其中之一的 HTTP 状态：</p>
+
+<ul>
+<li>200 - API 请求成功，请参考特定 API 响应以获得预期的有效载荷</li>
+<li>400 - 请求错误。服务器不会处理此请求。这通常是由于请求中发送的无效参数</li>
+<li>401 - 未授权的请求。服务器不会处理此请求，因为它没有有效的身份验证凭据</li>
+<li>403 - 禁止的请求。提供了凭据，但它们不足以执行请求</li>
+<li>404 - 未找到。表示服务器理解请求，但找不到目标资源的正确表示</li>
+<li>405 - 方法不允许。表示请求方法对所请求的服务器是未知的</li>
+<li>408 - 请求超时。表示服务器未完成请求。BTSE API 的超时设置为 30 秒</li>
+<li>429 - 请求过多。表示客户端超过了服务器设置的速率限制。有关详细信息，请参阅速率限制</li>
+<li>500 - 内部服务器错误。表示服务器遇到意外情况，不能完成请求</li>
+</ul>
+<h1 id='fafa833f79'>公共端点</h1><h2 id='40af277644'>查询货币的可用加密网络列表</h2>
+<blockquote>
+<p>响应</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+  </span><span class="s2">"Bitcoin"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"Liquid"</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre></div>
+<p><code>GET /api/v3.2/availableCurrencyNetworks</code></p>
+
+<p>获取货币的可用加密网络列表。</p>
+<h3 id='1f9ac54b15'>请求参数</h3>
+<table><thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>必填</th>
+<th>描述</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>currency</td>
+<td>string</td>
+<td>Yes</td>
+<td>示例：BTC</td>
+</tr>
+</tbody></table>
+<h3 id='05a22d5a79'>响应内容</h3>
+<table><thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>必填</th>
+<th>描述</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>$network</td>
+<td>string</td>
+<td>Yes</td>
+<td>网络名称</td>
+</tr>
+</tbody></table>
+<h2 id='9dbf83fe7f'>查询资产间的汇率</h2>
+<blockquote>
+<p>响应</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"msg"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Success"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"time"</span><span class="p">:</span><span class="w"> </span><span class="mi">1643085970137</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="mf">36051.55950285</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"success"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<p><code>GET /api/v3.2/exchangeRate</code></p>
+
+<p>获取资产之间的汇率。</p>
+<h3 id='1f9ac54b15-2'>请求参数</h3>
+<table><thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>必填</th>
+<th>描述</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>srcCurrency</td>
+<td>string</td>
+<td>Yes</td>
+<td>示例：BTC</td>
+</tr>
+<tr>
+<td>targetCurrency</td>
+<td>string</td>
+<td>Yes</td>
+<td>示例：USD</td>
+</tr>
+</tbody></table>
+<h3 id='05a22d5a79-2'>响应内容</h3>
+<table><thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>必填</th>
+<th>描述</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>code</td>
+<td>integer</td>
+<td>Yes</td>
+<td>返回码</td>
+</tr>
+<tr>
+<td>msg</td>
+<td>string</td>
+<td>Yes</td>
+<td>返回消息</td>
+</tr>
+<tr>
+<td>time</td>
+<td>long</td>
+<td>Yes</td>
+<td>Unix时间戳</td>
+</tr>
+<tr>
+<td>data</td>
+<td>float</td>
+<td>Yes</td>
+<td>资产之间的汇率</td>
+</tr>
+<tr>
+<td>success</td>
+<td>boolean</td>
+<td>Yes</td>
+<td>是 或 否</td>
+</tr>
+</tbody></table>
+<h1 id='a3d42f9b9f'>钱包端点</h1><h2 id='0bed682e6f'>查询钱包余额</h2>
+<blockquote>
+<p>响应</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"available"</span><span class="p">:</span><span class="w"> </span><span class="mf">520.52</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"USD"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"total"</span><span class="p">:</span><span class="w"> </span><span class="mf">5566.5566</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre></div>
+<p><code>GET /api/v3.2/user/wallet</code></p>
+
+<p>查询用户的钱包余额。API密钥需要<code>读取</code>权限。</p>
+<h3 id='05a22d5a79-3'>响应内容</h3>
+<table><thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>必填</th>
+<th>描述</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>currency</td>
+<td>string</td>
+<td>Yes</td>
+<td>货币</td>
+</tr>
+<tr>
+<td>total</td>
+<td>double</td>
+<td>Yes</td>
+<td>总余额</td>
+</tr>
+<tr>
+<td>available</td>
+<td>double</td>
+<td>Yes</td>
+<td>可用余额</td>
+</tr>
+</tbody></table>
+<h2 id='bc1c4a9961'>查询钱包历史</h2>
+<blockquote>
+<p>响应</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"amount"</span><span class="p">:</span><span class="w"> </span><span class="mf">21.35823825</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"USD"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"fees"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.06</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"orderId"</span><span class="p">:</span><span class="w"> </span><span class="mi">20181213000239</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"COMPLETED"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"timestamp"</span><span class="p">:</span><span class="w"> </span><span class="mi">1571630174639</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Transfer_In"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"username"</span><span class="p">:</span><span class="w"> </span><span class="s2">"btseUser"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"wallet"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Wallet"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"txid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;Blockchain Transaction ID&gt;"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"currencyNetwork"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;Blockchain currency network&gt;"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre></div>
+<p><code>GET /api/v3.2/user/wallet_history</code></p>
+
+<p>获取用户现货钱包的历史记录</p>
+<h3 id='1f9ac54b15-3'>请求参数</h3>
+<table><thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>必填</th>
+<th>描述</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>currency</td>
+<td>string</td>
+<td>No</td>
+<td>货币，如果未指定则返回所有货币</td>
+</tr>
+<tr>
+<td>startTime</td>
+<td>long</td>
+<td>No</td>
+<td>起始时间（以毫秒为单位，例如 1624987283000）</td>
+</tr>
+<tr>
+<td>endTime</td>
+<td>long</td>
+<td>No</td>
+<td>结束时间（以毫秒为单位，例如 1624987283000）</td>
+</tr>
+<tr>
+<td>count</td>
+<td>integer</td>
+<td>No</td>
+<td>要返回的记录数</td>
+</tr>
+<tr>
+<td>useNewSymbolNaming</td>
+<td>boolean</td>
+<td>No</td>
+<td>如果为 True，则以新格式返回期货市场名称，默认为 False</td>
+</tr>
+</tbody></table>
+<h3 id='05a22d5a79-4'>响应内容</h3>
+<table><thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>必填</th>
+<th>描述</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>currency</td>
+<td>string</td>
+<td>Yes</td>
+<td>货币</td>
+</tr>
+<tr>
+<td>amount</td>
+<td>double</td>
+<td>Yes</td>
+<td>记录中的金额</td>
+</tr>
+<tr>
+<td>fees</td>
+<td>double</td>
+<td>Yes</td>
+<td>如有，将收取的费用</td>
+</tr>
+<tr>
+<td>orderId</td>
+<td>string</td>
+<td>Yes</td>
+<td>内部钱包订单 ID</td>
+</tr>
+<tr>
+<td>wallet</td>
+<td>string</td>
+<td>Yes</td>
+<td>钱包类型。对于现货将返回 <code>@SPOT</code></td>
+</tr>
+<tr>
+<td>description</td>
+<td>string</td>
+<td>Yes</td>
+<td>交易描述</td>
+</tr>
+<tr>
+<td>status</td>
+<td>string</td>
+<td>Yes</td>
+<td>记录的状态如下<br/><code>PROCESSING</code><br/><code>CANCELLED</code><br/><code>COMPLETED</code><br/><code>EXPIRED</code><br/><code>FAILURE</code><br/><code>PENDING</code></td>
+</tr>
+<tr>
+<td>type</td>
+<td>string</td>
+<td>Yes</td>
+<td>记录的类型如下<br/><code>Deposit</code><br/><code>Withdraw</code><br/><code>Convert fiat</code><br/><code>Transfer_Out</code><br/><code>Transfer_In</code><br/><code>ReferralEarning</code><br/><code>Trading Fee Stake Freeze</code><br/><code>Trading Fee Stake Unfreeze</code><br/><code>Sub Account Transfer In</code><br/><code>Sub Account Transfer Out</code><br/><code>express buy</code><br/><code>Strategy Income</code><br/><code>Strategy Pay</code><br/><code>token voucher in</code><br/><code>spot trading fee rebate</code><br/><code>futures trading fee rebat</code><br/><code>trial fund</code><br/><code>general trading fee rebate</code><br/><code>token voucher out</code></td>
+</tr>
+</tbody></table>
+<h2 id='b8b48f9d66'>创建钱包地址</h2>
+<blockquote>
+<p>请求</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BTC-LIQUID"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>响应</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Blockchain address"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"created"</span><span class="p">:</span><span class="w"> </span><span class="mi">1592627542</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre></div>
+<p><code>POST /api/v3.2/user/wallet/address</code></p>
+
+<p>创建钱包地址。如果创建的地址之前未被使用，将返回一个400错误，并带有现有的未使用地址。要使用此API，需要<code>钱包</code>权限。</p>
+<h3 id='1f9ac54b15-4'>请求参数</h3>
+<table><thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>必填</th>
+<th>描述</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>currency</td>
+<td>string</td>
+<td>Yes</td>
+<td>例如：BTC</td>
+</tr>
+<tr>
+<td>network</td>
+<td>string</td>
+<td>Yes</td>
+<td>例如：BITCOIN</td>
+</tr>
+</tbody></table>
+<h3 id='05a22d5a79-5'>响应内容</h3>
+<table><thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>必填</th>
+<th>描述</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>address</td>
+<td>string</td>
+<td>Yes</td>
+<td>区块链地址</td>
+</tr>
+<tr>
+<td>created</td>
+<td>long</td>
+<td>Yes</td>
+<td>创建的时间戳</td>
+</tr>
+</tbody></table>
+<h2 id='b13bcdd685'>获取钱包地址</h2>
+<blockquote>
+<p>请求</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BTC"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"network"</span><span class="p">:</span><span class="w"> </span><span class="s2">"LIQUID"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>响应</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Blockchain address"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"created"</span><span class="p">:</span><span class="w"> </span><span class="mi">1592627542</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre></div>
+<p><code>GET /api/v3.2/user/wallet/address</code></p>
+
+<p>获取钱包地址。要使用此API，需要<code>钱包</code>权限。</p>
+<h3 id='1f9ac54b15-5'>请求参数</h3>
+<table><thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>必填</th>
+<th>描述</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>currency</td>
+<td>string</td>
+<td>Yes</td>
+<td>例如：BTC</td>
+</tr>
+<tr>
+<td>network</td>
+<td>string</td>
+<td>Yes</td>
+<td>例如：BITCOIN</td>
+</tr>
+</tbody></table>
+<h3 id='05a22d5a79-6'>响应内容</h3>
+<table><thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>必填</th>
+<th>描述</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>address</td>
+<td>string</td>
+<td>Yes</td>
+<td>区块链地址</td>
+</tr>
+<tr>
+<td>created</td>
+<td>long</td>
+<td>Yes</td>
+<td>创建的时间戳</td>
+</tr>
+</tbody></table>
+<h2 id='debc5b7760'>提款资金</h2>
+<blockquote>
+<p>请求</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BTC-Bitcoin"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BTCAddress"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"tag"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Tag"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"amount"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.001"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>响应</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"withdraw_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;withdrawal ID&gt;"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<p><code>POST /api/v3.2/user/wallet/withdraw</code></p>
+
+<p>执行钱包提款。要使用此API，需要<code>提币</code>权限。</p>
+<h3 id='1f9ac54b15-6'>请求参数</h3>
+<table><thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>必填</th>
+<th>描述</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>currency</td>
+<td>string</td>
+<td>Yes</td>
+<td>币种-网络对 <br> 币种列表可以从<a href="#query-available-currency-list-for-wallet-action">可用的币种列表中获取操作</a> <br> 网络列表可以从<a href="#query-available-crypto-network-list-for-currency">获取货币的可用网络列表</a>中检索</td>
+</tr>
+<tr>
+<td>address</td>
+<td>string</td>
+<td>Yes</td>
+<td>区块链地址</td>
+</tr>
+<tr>
+<td>tag</td>
+<td>string</td>
+<td>Yes</td>
+<td>标签，仅由某些区块链使用（例如：XRP）</td>
+</tr>
+<tr>
+<td>amount</td>
+<td>string</td>
+<td>Yes</td>
+<td>提款金额（所有货币的最大小数位为<code>8</code>）。如果超出，将返回无效的提现金额（代码：3506）</td>
+</tr>
+<tr>
+<td>includeWithdrawFee</td>
+<td>boolean</td>
+<td>No</td>
+<td>如果为true或字段不存在，则费用包含在金额中。否则，费用会额外增加，扣除的金额可能大于所声明的金额</td>
+</tr>
+</tbody></table>
+<h3 id='05a22d5a79-7'>响应内容</h3>
+<table><thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>必填</th>
+<th>描述</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>withdraw_id</td>
+<td>string</td>
+<td>Yes</td>
+<td>内部提款ID。参考<code>wallet_history</code> API中的<code>orderID</code>字段。由于提现不会立即处理。用户可以查询钱包历史API来检查提现的状态</td>
+</tr>
+</tbody></table>
+<h2 id='0ab39c1d97'>查询钱包操作的可用货币列表</h2>
+<blockquote>
+<p>响应</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+  </span><span class="s2">"USD"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"JPY"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"GBP"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"HKD"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"SGD"</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre></div>
+<p><code>GET /api/v3.2/availableCurrencies</code></p>
+
+<p>获取钱包操作的可用货币列表。</p>
+<h3 id='1f9ac54b15-7'>请求参数</h3>
+<table><thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>必填</th>
+<th>描述</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>action</td>
+<td>enum</td>
+<td>Yes</td>
+<td>CONVERT（转换）, WITHDRAW（提币）, SEND（发送/转账）</td>
+</tr>
+</tbody></table>
+<h3 id='05a22d5a79-8'>响应内容</h3>
+<table><thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>必填</th>
+<th>描述</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>$currencyName</td>
+<td>string</td>
+<td>Yes</td>
+<td>货币的名称</td>
+</tr>
+</tbody></table>
+<h2 id='f5b29b7330'>转换资金</h2>
+<blockquote>
+<p>请求</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"amount"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"fromAsset"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BTC"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"toAsset"</span><span class="p">:</span><span class="w"> </span><span class="s2">"USD"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>响应</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"amount"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"settlementAmount"</span><span class="p">:</span><span class="w"> </span><span class="mf">66680.43282</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"amountCurrency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BTC"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"settlementCurrency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"USD"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="mf">66680.43282</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<p><code>POST /api/v3.2/user/wallet/convert</code></p>
+
+<p>执行钱包内的货币转换。要使用此API，需要<code>钱包</code>权限。要获取支持的货币列表，请查看<a href="#0ab39c1d97">查询钱包操作的可用货币列表</a></p>
+<h3 id='1f9ac54b15-8'>请求参数</h3>
+<table><thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>必填</th>
+<th>描述</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>amount</td>
+<td>string</td>
+<td>Yes</td>
+<td>要转换的货币金额</td>
+</tr>
+<tr>
+<td>fromAsset</td>
+<td>string</td>
+<td>Yes</td>
+<td>要转换的源货币</td>
+</tr>
+<tr>
+<td>toAsset</td>
+<td>string</td>
+<td>Yes</td>
+<td>目标货币</td>
+</tr>
+</tbody></table>
+<h3 id='05a22d5a79-9'>响应内容</h3>
+<table><thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>必填</th>
+<th>描述</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>amount</td>
+<td>float</td>
+<td>Yes</td>
+<td>要转换的源货币金额</td>
+</tr>
+<tr>
+<td>settlementAmount</td>
+<td>float</td>
+<td>Yes</td>
+<td>转换后的目标货币金额</td>
+</tr>
+<tr>
+<td>amountCurrency</td>
+<td>string</td>
+<td>Yes</td>
+<td>源货币</td>
+</tr>
+<tr>
+<td>settlementCurrency</td>
+<td>string</td>
+<td>Yes</td>
+<td>目标货币</td>
+</tr>
+<tr>
+<td>rate</td>
+<td>float</td>
+<td>Yes</td>
+<td>汇率</td>
+</tr>
+</tbody></table>
+<h2 id='fff748076e'>转账资金</h2>
+<blockquote>
+<p>请求</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"amount"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.0"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"asset"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BTC"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"toUser"</span><span class="p">:</span><span class="w"> </span><span class="s2">"jamesbond"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"toUserMail"</span><span class="p">:</span><span class="w"> </span><span class="s2">"james.bond@google.com"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>响应</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"amount"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"asset"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BTC"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"toUser"</span><span class="p">:</span><span class="w"> </span><span class="s2">"jamesbond"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"toUserMail"</span><span class="p">:</span><span class="w"> </span><span class="s2">"james.bond@google.com"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<p><code>POST /api/v3.2/user/wallet/transfer</code></p>
+
+<p>执行钱包内的货币转给其他用户的操作。要使用此API，需要<code>转账</code>权限。要获取支持的货币列表，请查看<a href="#0ab39c1d97">查询钱包操作的可用货币列表</a></p>
+<h3 id='1f9ac54b15-9'>请求参数</h3>
+<table><thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>必填</th>
+<th>描述</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>amount</td>
+<td>string</td>
+<td>Yes</td>
+<td>要转账的货币金额</td>
+</tr>
+<tr>
+<td>asset</td>
+<td>string</td>
+<td>Yes</td>
+<td>要转账的货币</td>
+</tr>
+<tr>
+<td>toUser</td>
+<td>string</td>
+<td>Yes</td>
+<td>接收者的账号</td>
+</tr>
+<tr>
+<td>toUserMail</td>
+<td>string</td>
+<td>Yes</td>
+<td>接收者的电子邮件</td>
+</tr>
+<tr>
+<td>useNewSymbolNaming</td>
+<td>boolean</td>
+<td>No</td>
+<td>若使用新的期货市场名称在资产字段中为真，默认为假</td>
+</tr>
+</tbody></table>
+<h3 id='05a22d5a79-10'>响应内容</h3>
+<table><thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>必填</th>
+<th>描述</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>amount</td>
+<td>string</td>
+<td>Yes</td>
+<td>要转账的货币金额</td>
+</tr>
+<tr>
+<td>asset</td>
+<td>string</td>
+<td>Yes</td>
+<td>要转账的货币</td>
+</tr>
+<tr>
+<td>toUser</td>
+<td>string</td>
+<td>Yes</td>
+<td>接收者的账号</td>
+</tr>
+<tr>
+<td>toUserMail</td>
+<td>string</td>
+<td>Yes</td>
+<td>接收者的电子邮件</td>
+</tr>
+</tbody></table>
+<h2 id='dfc184460c'>子帐号转账历史纪录</h2>
+<blockquote>
+<p>响应</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"msg"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Success"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"time"</span><span class="p">:</span><span class="w"> </span><span class="mi">1653964265608</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"success"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"totalRows"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"pageSize"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"currentPage"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"totalPages"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"timestamp"</span><span class="p">:</span><span class="w"> </span><span class="mi">1711707874850</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"fromUser"</span><span class="p">:</span><span class="w"> </span><span class="s2">"uuooxxsub00002"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"receiver"</span><span class="p">:</span><span class="w"> </span><span class="s2">"uuooxx"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"USDT"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"amount"</span><span class="p">:</span><span class="w"> </span><span class="mi">11</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<p><code>POST /api/v3.2/subaccount/wallet/history</code></p>
+
+<p>查询子帐号转帐历史纪录</p>
+<h3 id='1f9ac54b15-10'>请求参数</h3>
+<table><thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>必填</th>
+<th>描述</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>startTime</td>
+<td>string</td>
+<td>Yes</td>
+<td>要转账的货币金额</td>
+</tr>
+<tr>
+<td>endTime</td>
+<td>string</td>
+<td>Yes</td>
+<td>要转账的货币</td>
+</tr>
+<tr>
+<td>page</td>
+<td>string</td>
+<td>Yes</td>
+<td>接收者的账号</td>
+</tr>
+<tr>
+<td>pageSize</td>
+<td>string</td>
+<td>Yes</td>
+<td>接收者的电子邮件</td>
+</tr>
+</tbody></table>
+<h3 id='05a22d5a79-11'>响应内容</h3>
+<table><thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>必填</th>
+<th>描述</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>totalRows</td>
+<td>integer</td>
+<td>Yes</td>
+<td>接收者的电子邮件</td>
+</tr>
+<tr>
+<td>pageSize</td>
+<td>integer</td>
+<td>Yes</td>
+<td>接收者的电子邮件</td>
+</tr>
+<tr>
+<td>currentPage</td>
+<td>integer</td>
+<td>Yes</td>
+<td>目前页数</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>integer</td>
+<td>Yes</td>
+<td>发送时间</td>
+</tr>
+<tr>
+<td>fromUser</td>
+<td>string</td>
+<td>Yes</td>
+<td>发送者的账号</td>
+</tr>
+<tr>
+<td>receiver</td>
+<td>string</td>
+<td>Yes</td>
+<td>接收者的账号</td>
+</tr>
+<tr>
+<td>currency</td>
+<td>string</td>
+<td>Yes</td>
+<td>转账的货币</td>
+</tr>
+<tr>
+<td>amount</td>
+<td>integer</td>
+<td>Yes</td>
+<td>转账的货币金额</td>
+</tr>
+</tbody></table>
+
+      </div>
+      <div class="dark-box">
+          <div class="lang-selector">
+                <a href="#" data-language-name="json">json</a>
+          </div>
+      </div>
+    </div>
+    <script>
+const DEFAULT_LANG = 'en';
+const IS_DEV = false;
+const DOCS_PREFIX = IS_DEV ? '/' : '/docs/';
+const TAB_MAP = {
+  spot: {
+    en: 'Spot',
+    cn: '现货'
+  },
+  futures: {
+    en: 'Futures',
+    cn: '期货'
+  },
+  futuresV2_2: {
+    en: 'FuturesV2.2',
+    cn: '期货V2.2'
+  },
+  otc: {
+    en: 'OTC',
+    cn: '场外交易'
+  },
+  wallet: {
+    en: 'Wallet/Convert/Transfer',
+    cn: '钱包/转换/转账'
+  },
+  streaming: {
+    en: 'Streaming',
+    cn: '數據流'
+  },
+  fix: {
+    en: 'FIX',
+    cn: 'FIX'
+  },
+  earn: {
+    en: 'Earn',
+    cn: '賺幣'
+  }
+};
+
+function getUrlRelativePath() {
+  let url = document.location.toString();
+  let arrUrl = url.split('//');
+  let start = arrUrl[1].indexOf('/');
+  let relUrl = arrUrl[1].substring(start);
+  if (relUrl.indexOf('?') !== -1) {
+    relUrl = relUrl.split("?")[0];
+  }
+  if (relUrl.indexOf('#') !== -1) {
+    relUrl = relUrl.split('#')[0];
+  }
+  return relUrl;
+}
+
+function capitalizeFirstLetter(s) {
+  return s.charAt(0).toUpperCase() + s.slice(1);
+}
+
+function getLang() {
+  const url = getUrlRelativePath();
+  const isEN = url.indexOf('cn') === -1;
+  return isEN ? 'en' : 'cn';
+}
+
+function getTabTemplate(isTab, href, tabKey, tabText) {
+  const classList = isTab ? 'nav_cell nav_tab' : 'menu-row'
+  const idPrefix = isTab ? 'nav_link_' : 'menu-link-'
+  const linkClass = isTab ? 'nav-link' : 'menu-link'
+  return `
+    <span class="${classList}">
+      <a href="${href}" id="${idPrefix}${tabKey}" class="${linkClass}">${tabText}</a>
+    </span>
+  `
+}
+
+function generateNavHtml(lang, isTab) {
+  return Object.keys(TAB_MAP).map(tabKey => {
+    const tabText = TAB_MAP[tabKey][lang] || capitalizeFirstLetter(tabKey);
+    const href = `${DOCS_PREFIX}${tabKey}/${lang}/`;
+    return getTabTemplate(isTab, href, tabKey, tabText);
+  })
+}
+
+function addChangeLanguageLink(lang) {
+  // add change lang link in navbar.
+  const langText = lang === 'en' ? '中文' : 'English';
+  const langHref = lang === 'en' ? location.href.replace('/en/', '/cn/') : location.href.replace('/cn/', '/en/');
+  const langLink = `<a class="change-lang-link" href="${langHref}">${langText}</a>`;
+  $('#navBox').append(`<span class="nav_cell">${langLink}</span>`);
+}
+
+$(function() {
+  const lang = getLang();
+  $('#navBox').html(generateNavHtml(lang, true));
+  $('#menuDropdown').html(generateNavHtml(lang, false));
+  const tabList = Object.keys(TAB_MAP);
+  for (let i = 0; i < tabList.length; i ++) {
+    const tabKey = tabList[i];
+    if (location.href.indexOf(`/${tabKey}/`) > 0) {
+      $('.nav-link').removeClass('current');
+      $(`#nav_link_${tabKey}`).addClass('current');
+      $('.menu-link').removeClass('current');
+      $(`#menu-link-${tabKey}`).addClass('current');
+      break;
+    }
+  }
+  $('#menuDropdownBtn').click(() => {
+    $('.menu-dropdown').toggleClass('hide');
+  });
+  addChangeLanguageLink(lang);
+});
+  </script>
+  </body>
+</html>

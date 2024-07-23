@@ -1,0 +1,1082 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>BTSE API Documentation</title>
+    <link href="../../images/favicon-3eb77247.ico" rel="icon" type="image/ico" />
+    <style>
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cpf {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s, .highlight .sa, .highlight .dl {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf, .highlight .fm {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv, .highlight .vm {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #f92672;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+    </style>
+    <link href="../../stylesheets/screen-bcf56b31.css" rel="stylesheet" media="screen" />
+    <link href="../../stylesheets/print-953e3353.css" rel="stylesheet" media="print" />
+      <script src="../../javascripts/all-a9fde460.js"></script>
+
+  </head>
+
+  <body class="earn earn_cn earn_cn_index" data-languages="[&quot;json&quot;]">
+    <a href="#" id="nav-button">
+      <span>
+        <img src="../../images/navbar-cad8cdcb.png" alt="" />
+      </span>
+    </a>
+    <header>
+    <div class="flex_box">
+      <img src="../../images/logo-d7d2b532.svg" class="logo" alt="" />
+      <div class="nav-row-wrap">
+        <div id="navBox" class="nav_box"></div>
+        <div id="menuDropdownBtn" class="noselect menu-dropdown-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          <div id="menuDropdown" class="menu-dropdown hide"></div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+    <div class="toc-wrapper">
+        <div class="lang-selector">
+              <a href="#" data-language-name="json">json</a>
+        </div>
+        <div class="search">
+          <input type="text" class="search" id="input-search" placeholder="Search">
+        </div>
+        <ul class="search-results"></ul>
+      <ul id="toc" class="toc-list-h1">
+          <li>
+            <a href="#185368440e" class="toc-h1 toc-link" data-title="更新日志">更新日志</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#1-0-2021-12-8" class="toc-h2 toc-link" data-title="版本 1.0（2021年12月8日）">版本 1.0（2021年12月8日）</a>
+                  </li>
+                  <li>
+                    <a href="#1-1-2021-12-13" class="toc-h2 toc-link" data-title="版本 1.1（2021年12月13日）">版本 1.1（2021年12月13日）</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#153042ed9e" class="toc-h1 toc-link" data-title="概述">概述</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#api" class="toc-h2 toc-link" data-title="生成API密钥">生成API密钥</a>
+                  </li>
+                  <li>
+                    <a href="#666564834a" class="toc-h2 toc-link" data-title="终端点">终端点</a>
+                  </li>
+                  <li>
+                    <a href="#cd7685def5" class="toc-h2 toc-link" data-title="身份验证">身份验证</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#d9e9aae417" class="toc-h1 toc-link" data-title="投资终端点">投资终端点</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#80a52cc98f" class="toc-h2 toc-link" data-title="查询投资产品">查询投资产品</a>
+                  </li>
+                  <li>
+                    <a href="#90cf77e251" class="toc-h2 toc-link" data-title="存款投资">存款投资</a>
+                  </li>
+                  <li>
+                    <a href="#e0f609d812" class="toc-h2 toc-link" data-title="续投资">续投资</a>
+                  </li>
+                  <li>
+                    <a href="#bfe24f39d3" class="toc-h2 toc-link" data-title="赎回投资">赎回投资</a>
+                  </li>
+                  <li>
+                    <a href="#f2e5e563ea" class="toc-h2 toc-link" data-title="查询投资订单">查询投资订单</a>
+                  </li>
+                  <li>
+                    <a href="#5d25d8e2e7" class="toc-h2 toc-link" data-title="查询投资历史">查询投资历史</a>
+                  </li>
+              </ul>
+          </li>
+      </ul>
+        <ul class="toc-footer">
+        </ul>
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        <h1 id='185368440e'>更新日志</h1><h2 id='1-0-2021-12-8'>版本 1.0（2021年12月8日）</h2>
+<ul>
+<li>发布 賺幣（投资）API 的初始版本</li>
+</ul>
+<h2 id='1-1-2021-12-13'>版本 1.1（2021年12月13日）</h2>
+<ul>
+<li>在查询投资历史的请求和响应中添加了缺少的分页描述</li>
+<li>在存款/赎回投资的响应中添加了处理结果</li>
+</ul>
+<h1 id='153042ed9e'>概述</h1><h2 id='api'>生成API密钥</h2>
+<p>在使用经过身份验证的API之前，您需要在BTSE平台上创建API密钥。要创建API密钥，您可以按照以下步骤操作：</p>
+
+<ul>
+<li>使用您的用户名/电子邮件和密码登录BTSE网站</li>
+<li>单击右上角的“账户”</li>
+<li>选择API选项卡</li>
+<li>单击“新API”按钮以创建API密钥和密码。 （注意：密码仅会出现一次）</li>
+<li>使用您的API密钥和密码构建签名。</li>
+</ul>
+<h2 id='666564834a'>终端点</h2>
+<ul>
+<li>正式环境
+
+<ul>
+<li>HTTP
+
+<ul>
+<li><code>https://api.btse.com/spot</code></li>
+</ul></li>
+</ul></li>
+<li>测试网络
+
+<ul>
+<li>HTTP
+
+<ul>
+<li><code>https://testapi.btse.io/spot</code></li>
+</ul></li>
+</ul></li>
+</ul>
+<h2 id='cd7685def5'>身份验证</h2>
+<ul>
+<li><p>API密钥（request-api）</p>
+
+<ul>
+<li>参数名称：<code>request-api</code>，位置：标题。API密钥以string形式从BTSE平台获取</li>
+</ul></li>
+<li><p>API密钥（request-nonce）</p>
+
+<ul>
+<li>参数名称：<code>request-nonce</code>，位置：标题。当前时间戳的长格式表示</li>
+</ul></li>
+<li><p>API密钥（request-sign）</p>
+
+<ul>
+<li>参数名称：<code>request-sign</code>，位置：标题。基于以下算法生成的复合签名：Signature=HMAC.Sha384（secretkey，（urlpath + request-nonce + bodyStr））（注意：当没有数据时，bodyStr = &#39;&#39;）：</li>
+</ul></li>
+</ul>
+<h1 id='d9e9aae417'>投资终端点</h1><h2 id='80a52cc98f'>查询投资产品</h2>
+<blockquote>
+<p>响应</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OPENETH00001"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ETH Flex Savings"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ETH"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Flex"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"startDate"</span><span class="p">:</span><span class="w"> </span><span class="mi">1610685918000</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"interestStartDate"</span><span class="p">:</span><span class="w"> </span><span class="mi">1610719200000</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"rates"</span><span class="p">:</span><span class="w">
+    </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"days"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.15</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"compounding"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"autoRenewSupported"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"dailyLimit"</span><span class="p">:</span><span class="w"> </span><span class="mf">10.0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"minSize"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.00000000</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"incrementalSize"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.00000000</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre></div>
+<p><code>GET /api/v3.2/invest/products</code></p>
+
+<p>获取所有投资产品</p>
+<h3 id='1f9ac54b15'>请求参数</h3>
+<p>(无)</p>
+<h3 id='05a22d5a79'>响应内容</h3>
+<table><thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>描述</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td>Yes</td>
+<td>产品编号</td>
+</tr>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>Yes</td>
+<td>产品名称</td>
+</tr>
+<tr>
+<td>currency</td>
+<td>string</td>
+<td>Yes</td>
+<td>货币</td>
+</tr>
+<tr>
+<td>type</td>
+<td>string</td>
+<td>Yes</td>
+<td>产品类型</td>
+</tr>
+<tr>
+<td>startDate</td>
+<td>long</td>
+<td>Yes</td>
+<td>投资开始日期</td>
+</tr>
+<tr>
+<td>interestStartDate</td>
+<td>long</td>
+<td>Yes</td>
+<td>利息开始日期</td>
+</tr>
+<tr>
+<td>rates</td>
+<td>RateObject[]</td>
+<td>Yes</td>
+<td>利息率信息</td>
+</tr>
+<tr>
+<td>compounding</td>
+<td>double</td>
+<td>Yes</td>
+<td>产品是否复利</td>
+</tr>
+<tr>
+<td>autoRenewSupported</td>
+<td>double</td>
+<td>Yes</td>
+<td>产品是否支持自动续约</td>
+</tr>
+<tr>
+<td>dailyLimit</td>
+<td>double</td>
+<td>Yes</td>
+<td>每日投资金额限制</td>
+</tr>
+<tr>
+<td>minSize</td>
+<td>double</td>
+<td>Yes</td>
+<td>最低投资额</td>
+</tr>
+<tr>
+<td>incrementalSize</td>
+<td>double</td>
+<td>Yes</td>
+<td>投资步进大小</td>
+</tr>
+</tbody></table>
+<h3 id='rateobject'>RateObject</h3>
+<table><thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>描述</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>days</td>
+<td>integer</td>
+<td>Yes</td>
+<td>天数</td>
+</tr>
+<tr>
+<td>rate</td>
+<td>double</td>
+<td>Yes</td>
+<td>利率</td>
+</tr>
+</tbody></table>
+<h2 id='90cf77e251'>存款投资</h2>
+<blockquote>
+<p>请求</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"productId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OPENUSDT0001"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"amount"</span><span class="p">:</span><span class="w"> </span><span class="mf">100.99</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"renew"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"day"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Reponse</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"success"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<p><code>POST /api/v3.2/invest/deposit</code></p>
+
+<p>存款投资</p>
+<h3 id='1f9ac54b15-2'>请求参数</h3>
+<table><thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>描述</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>productId</td>
+<td>string</td>
+<td>Yes</td>
+<td>投资产品编号</td>
+</tr>
+<tr>
+<td>amount</td>
+<td>double</td>
+<td>Yes</td>
+<td>投资金额</td>
+</tr>
+<tr>
+<td>renew</td>
+<td>boolean</td>
+<td>Yes</td>
+<td>自动续约</td>
+</tr>
+<tr>
+<td>day</td>
+<td>integer</td>
+<td>Yes</td>
+<td>天数</td>
+</tr>
+</tbody></table>
+<h3 id='05a22d5a79-2'>响应内容</h3>
+<table><thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>描述</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>success</td>
+<td>boolean</td>
+<td>Yes</td>
+<td>处理结果</td>
+</tr>
+</tbody></table>
+<h2 id='e0f609d812'>续投资</h2>
+<blockquote>
+<p>请求</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"orderId"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"autoRenew"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>响应</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"orderId"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"autoRenew"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<p><code>POST /api/v3.2/invest/renew</code></p>
+
+<p>续投资订单</p>
+<h3 id='1f9ac54b15-3'>请求参数</h3>
+<table><thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>描述</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>orderId</td>
+<td>integer</td>
+<td>Yes</td>
+<td>投资订单编号</td>
+</tr>
+<tr>
+<td>autoRenew</td>
+<td>boolean</td>
+<td>Yes</td>
+<td>自动续约</td>
+</tr>
+</tbody></table>
+<h3 id='05a22d5a79-3'>响应内容</h3>
+<table><thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>描述</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>orderId</td>
+<td>integer</td>
+<td>Yes</td>
+<td>投资订单编号</td>
+</tr>
+<tr>
+<td>autoRenew</td>
+<td>boolean</td>
+<td>Yes</td>
+<td>自动续约标志的状态</td>
+</tr>
+</tbody></table>
+<h2 id='bfe24f39d3'>赎回投资</h2>
+<blockquote>
+<p>请求</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"orderId"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"amount"</span><span class="p">:</span><span class="w"> </span><span class="mf">12.34</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Reponse</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"success"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<p><code>POST /api/v3.2/invest/redeem</code></p>
+
+<p>赎回投资订单</p>
+<h3 id='1f9ac54b15-4'>请求参数</h3>
+<table><thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>描述</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>orderId</td>
+<td>integer</td>
+<td>Yes</td>
+<td>投资订单编号</td>
+</tr>
+<tr>
+<td>amount</td>
+<td>double</td>
+<td>Yes</td>
+<td>赎回金额</td>
+</tr>
+</tbody></table>
+<h3 id='05a22d5a79-4'>响应内容</h3>
+<table><thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>描述</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>success</td>
+<td>boolean</td>
+<td>Yes</td>
+<td>处理结果</td>
+</tr>
+</tbody></table>
+<h2 id='f2e5e563ea'>查询投资订单</h2>
+<blockquote>
+<p>响应</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">456</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ETH Flex Savings"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ETH"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Flex"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.15</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"investAmt"</span><span class="p">:</span><span class="w"> </span><span class="mf">10.00000000</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"interestEarned"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.00031507</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"nextInterestPayoutTime"</span><span class="p">:</span><span class="w"> </span><span class="mi">1610632800000</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"startTime"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"endTime"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"duration"</span><span class="p">:</span><span class="w"> </span><span class="mi">86400000</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"payoutLockTime"</span><span class="p">:</span><span class="w"> </span><span class="mi">300000</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"autoRenew"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"compounding"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"autoRenewSupported"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"dailyLimit"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"redemptionProcessing"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre></div>
+<p><code>GET /api/v3.2/invest/orders</code></p>
+
+<p>查询投资订单</p>
+<h3 id='05a22d5a79-5'>响应内容</h3>
+<table><thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>描述</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>integer</td>
+<td>Yes</td>
+<td>订单编号</td>
+</tr>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>Yes</td>
+<td>产品名称</td>
+</tr>
+<tr>
+<td>currency</td>
+<td>string</td>
+<td>Yes</td>
+<td>货币</td>
+</tr>
+<tr>
+<td>type</td>
+<td>string</td>
+<td>Yes</td>
+<td>产品类型</td>
+</tr>
+<tr>
+<td>rate</td>
+<td>boolean</td>
+<td>Yes</td>
+<td>利率</td>
+</tr>
+<tr>
+<td>investAmt</td>
+<td>boolean</td>
+<td>Yes</td>
+<td>金额</td>
+</tr>
+<tr>
+<td>interestEarned</td>
+<td>boolean</td>
+<td>Yes</td>
+<td>赚取的利息</td>
+</tr>
+<tr>
+<td>nextInterestPayoutTime</td>
+<td>boolean</td>
+<td>Yes</td>
+<td>下次利息支付时间</td>
+</tr>
+<tr>
+<td>startTime</td>
+<td>boolean</td>
+<td>Yes</td>
+<td>开始时间</td>
+</tr>
+<tr>
+<td>endTime</td>
+<td>boolean</td>
+<td>Yes</td>
+<td>结束时间</td>
+</tr>
+<tr>
+<td>duration</td>
+<td>boolean</td>
+<td>Yes</td>
+<td>期限</td>
+</tr>
+<tr>
+<td>payoutLockTime</td>
+<td>boolean</td>
+<td>Yes</td>
+<td>支付锁定时间</td>
+</tr>
+<tr>
+<td>autoRenew</td>
+<td>boolean</td>
+<td>Yes</td>
+<td>自动续约</td>
+</tr>
+<tr>
+<td>compounding</td>
+<td>boolean</td>
+<td>Yes</td>
+<td>复利</td>
+</tr>
+<tr>
+<td>autoRenewSupported</td>
+<td>boolean</td>
+<td>Yes</td>
+<td>是否支持自动续约</td>
+</tr>
+<tr>
+<td>redemptionProcessing</td>
+<td>boolean</td>
+<td>Yes</td>
+<td>是否正在赎回处理</td>
+</tr>
+</tbody></table>
+<h2 id='5d25d8e2e7'>查询投资历史</h2>
+<blockquote>
+<p>响应</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"totalRows"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"pageNumber"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"pageSize"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"txnTime"</span><span class="p">:</span><span class="w"> </span><span class="mi">1598918400000</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"USDT Flex Savings"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"USDT"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.5</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Flex"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"txnType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"INVEST_SERVICE_TYPE_DEPOSIT"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"amount"</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"totalAmount"</span><span class="p">:</span><span class="w"> </span><span class="mi">2000</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"interestEarned"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.22</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"duration"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<p><code>GET /api/v3.2/invest/history</code></p>
+
+<p>查询投资历史</p>
+<h3 id='1f9ac54b15-5'>请求参数</h3>
+<table><thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>描述</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pageNumber</td>
+<td>integer</td>
+<td>否</td>
+<td>要查询的页码，默认为1（从1开始）</td>
+</tr>
+<tr>
+<td>pageSize</td>
+<td>integer</td>
+<td>否</td>
+<td>每页记录数，默认为10，最大50条记录</td>
+</tr>
+</tbody></table>
+<h3 id='05a22d5a79-6'>响应内容</h3>
+<table><thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>描述</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>totalRows</td>
+<td>string</td>
+<td>Yes</td>
+<td>总记录数</td>
+</tr>
+<tr>
+<td>pageNumber</td>
+<td>string</td>
+<td>Yes</td>
+<td>当前页码</td>
+</tr>
+<tr>
+<td>pageSize</td>
+<td>string</td>
+<td>Yes</td>
+<td>每页记录数</td>
+</tr>
+<tr>
+<td>data</td>
+<td>InvestmentHistoryObject[]</td>
+<td>Yes</td>
+<td>投资历史对象</td>
+</tr>
+</tbody></table>
+<h3 id='investmenthistoryobject'>InvestmentHistoryObject</h3>
+<table><thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>描述</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>txnTime</td>
+<td>integer</td>
+<td>Yes</td>
+<td>交易时间</td>
+</tr>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>Yes</td>
+<td>产品名称</td>
+</tr>
+<tr>
+<td>currency</td>
+<td>string</td>
+<td>Yes</td>
+<td>货币</td>
+</tr>
+<tr>
+<td>rate</td>
+<td>string</td>
+<td>Yes</td>
+<td>利率</td>
+</tr>
+<tr>
+<td>type</td>
+<td>boolean</td>
+<td>Yes</td>
+<td>产品类型</td>
+</tr>
+<tr>
+<td>txnType</td>
+<td>boolean</td>
+<td>Yes</td>
+<td>交易类型</td>
+</tr>
+<tr>
+<td>amount</td>
+<td>boolean</td>
+<td>Yes</td>
+<td>交易金额</td>
+</tr>
+<tr>
+<td>totalAmount</td>
+<td>boolean</td>
+<td>Yes</td>
+<td>投资总额</td>
+</tr>
+<tr>
+<td>interestEarned</td>
+<td>boolean</td>
+<td>Yes</td>
+<td>赚取的利息</td>
+</tr>
+<tr>
+<td>duration</td>
+<td>boolean</td>
+<td>Yes</td>
+<td>期限</td>
+</tr>
+</tbody></table>
+
+      </div>
+      <div class="dark-box">
+          <div class="lang-selector">
+                <a href="#" data-language-name="json">json</a>
+          </div>
+      </div>
+    </div>
+    <script>
+const DEFAULT_LANG = 'en';
+const IS_DEV = false;
+const DOCS_PREFIX = IS_DEV ? '/' : '/docs/';
+const TAB_MAP = {
+  spot: {
+    en: 'Spot',
+    cn: '现货'
+  },
+  futures: {
+    en: 'Futures',
+    cn: '期货'
+  },
+  futuresV2_2: {
+    en: 'FuturesV2.2',
+    cn: '期货V2.2'
+  },
+  otc: {
+    en: 'OTC',
+    cn: '场外交易'
+  },
+  wallet: {
+    en: 'Wallet/Convert/Transfer',
+    cn: '钱包/转换/转账'
+  },
+  streaming: {
+    en: 'Streaming',
+    cn: '數據流'
+  },
+  fix: {
+    en: 'FIX',
+    cn: 'FIX'
+  },
+  earn: {
+    en: 'Earn',
+    cn: '賺幣'
+  }
+};
+
+function getUrlRelativePath() {
+  let url = document.location.toString();
+  let arrUrl = url.split('//');
+  let start = arrUrl[1].indexOf('/');
+  let relUrl = arrUrl[1].substring(start);
+  if (relUrl.indexOf('?') !== -1) {
+    relUrl = relUrl.split("?")[0];
+  }
+  if (relUrl.indexOf('#') !== -1) {
+    relUrl = relUrl.split('#')[0];
+  }
+  return relUrl;
+}
+
+function capitalizeFirstLetter(s) {
+  return s.charAt(0).toUpperCase() + s.slice(1);
+}
+
+function getLang() {
+  const url = getUrlRelativePath();
+  const isEN = url.indexOf('cn') === -1;
+  return isEN ? 'en' : 'cn';
+}
+
+function getTabTemplate(isTab, href, tabKey, tabText) {
+  const classList = isTab ? 'nav_cell nav_tab' : 'menu-row'
+  const idPrefix = isTab ? 'nav_link_' : 'menu-link-'
+  const linkClass = isTab ? 'nav-link' : 'menu-link'
+  return `
+    <span class="${classList}">
+      <a href="${href}" id="${idPrefix}${tabKey}" class="${linkClass}">${tabText}</a>
+    </span>
+  `
+}
+
+function generateNavHtml(lang, isTab) {
+  return Object.keys(TAB_MAP).map(tabKey => {
+    const tabText = TAB_MAP[tabKey][lang] || capitalizeFirstLetter(tabKey);
+    const href = `${DOCS_PREFIX}${tabKey}/${lang}/`;
+    return getTabTemplate(isTab, href, tabKey, tabText);
+  })
+}
+
+function addChangeLanguageLink(lang) {
+  // add change lang link in navbar.
+  const langText = lang === 'en' ? '中文' : 'English';
+  const langHref = lang === 'en' ? location.href.replace('/en/', '/cn/') : location.href.replace('/cn/', '/en/');
+  const langLink = `<a class="change-lang-link" href="${langHref}">${langText}</a>`;
+  $('#navBox').append(`<span class="nav_cell">${langLink}</span>`);
+}
+
+$(function() {
+  const lang = getLang();
+  $('#navBox').html(generateNavHtml(lang, true));
+  $('#menuDropdown').html(generateNavHtml(lang, false));
+  const tabList = Object.keys(TAB_MAP);
+  for (let i = 0; i < tabList.length; i ++) {
+    const tabKey = tabList[i];
+    if (location.href.indexOf(`/${tabKey}/`) > 0) {
+      $('.nav-link').removeClass('current');
+      $(`#nav_link_${tabKey}`).addClass('current');
+      $('.menu-link').removeClass('current');
+      $(`#menu-link-${tabKey}`).addClass('current');
+      break;
+    }
+  }
+  $('#menuDropdownBtn').click(() => {
+    $('.menu-dropdown').toggleClass('hide');
+  });
+  addChangeLanguageLink(lang);
+});
+  </script>
+  </body>
+</html>

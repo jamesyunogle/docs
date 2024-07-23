@@ -1,0 +1,1387 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>BTSE API Documentation</title>
+    <link href="../../images/favicon-3eb77247.ico" rel="icon" type="image/ico" />
+    <style>
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cpf {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s, .highlight .sa, .highlight .dl {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf, .highlight .fm {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv, .highlight .vm {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #f92672;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+    </style>
+    <link href="../../stylesheets/screen-bcf56b31.css" rel="stylesheet" media="screen" />
+    <link href="../../stylesheets/print-953e3353.css" rel="stylesheet" media="print" />
+      <script src="../../javascripts/all-a9fde460.js"></script>
+
+  </head>
+
+  <body class="otc otc_cn otc_cn_index" data-languages="[&quot;json&quot;]">
+    <a href="#" id="nav-button">
+      <span>
+        <img src="../../images/navbar-cad8cdcb.png" alt="" />
+      </span>
+    </a>
+    <header>
+    <div class="flex_box">
+      <img src="../../images/logo-d7d2b532.svg" class="logo" alt="" />
+      <div class="nav-row-wrap">
+        <div id="navBox" class="nav_box"></div>
+        <div id="menuDropdownBtn" class="noselect menu-dropdown-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          <div id="menuDropdown" class="menu-dropdown hide"></div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+    <div class="toc-wrapper">
+        <div class="lang-selector">
+              <a href="#" data-language-name="json">json</a>
+        </div>
+        <div class="search">
+          <input type="text" class="search" id="input-search" placeholder="Search">
+        </div>
+        <ul class="search-results"></ul>
+      <ul id="toc" class="toc-list-h1">
+          <li>
+            <a href="#185368440e" class="toc-h1 toc-link" data-title="更新日志">更新日志</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#1-1-3-2022-3-16" class="toc-h2 toc-link" data-title="版本 1.1.3 (2022年3月16日)">版本 1.1.3 (2022年3月16日)</a>
+                  </li>
+                  <li>
+                    <a href="#1-1-2-2022-1-25" class="toc-h2 toc-link" data-title="版本 1.1.2 (2022年1月25日)">版本 1.1.2 (2022年1月25日)</a>
+                  </li>
+                  <li>
+                    <a href="#1-1-1-2021-11-24" class="toc-h2 toc-link" data-title="版本 1.1.1 (2021年11月24日)">版本 1.1.1 (2021年11月24日)</a>
+                  </li>
+                  <li>
+                    <a href="#1-1-0-2021-9-17" class="toc-h2 toc-link" data-title="版本 1.1.0 (2021年9月17日)">版本 1.1.0 (2021年9月17日)</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#5060421d15" class="toc-h1 toc-link" data-title="概览">概览</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#api" class="toc-h2 toc-link" data-title="生成API密钥">生成API密钥</a>
+                  </li>
+                  <li>
+                    <a href="#666564834a" class="toc-h2 toc-link" data-title="终端点">终端点</a>
+                  </li>
+                  <li>
+                    <a href="#32c808cbe5" class="toc-h2 toc-link" data-title="认证">认证</a>
+                  </li>
+                  <li>
+                    <a href="#887e990e90" class="toc-h2 toc-link" data-title="速率限制">速率限制</a>
+                  </li>
+                  <li>
+                    <a href="#api-2" class="toc-h2 toc-link" data-title="API状态代码">API状态代码</a>
+                  </li>
+                  <li>
+                    <a href="#api-enum" class="toc-h2 toc-link" data-title="API ENUM">API ENUM</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#5f059df046" class="toc-h1 toc-link" data-title="工作流程">工作流程</a>
+          </li>
+          <li>
+            <a href="#otc" class="toc-h1 toc-link" data-title="OTC终端点">OTC终端点</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#7335b2436c" class="toc-h2 toc-link" data-title="市场摘要">市场摘要</a>
+                  </li>
+                  <li>
+                    <a href="#db8afb45d1" class="toc-h2 toc-link" data-title="请求报价">请求报价</a>
+                  </li>
+                  <li>
+                    <a href="#a61744ae67" class="toc-h2 toc-link" data-title="接受报价">接受报价</a>
+                  </li>
+                  <li>
+                    <a href="#91cb77f2de" class="toc-h2 toc-link" data-title="拒绝报价">拒绝报价</a>
+                  </li>
+                  <li>
+                    <a href="#0f65a9a797" class="toc-h2 toc-link" data-title="拒绝当前报价">拒绝当前报价</a>
+                  </li>
+                  <li>
+                    <a href="#90376e83a0" class="toc-h2 toc-link" data-title="查询订单">查询订单</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#websocket" class="toc-h1 toc-link" data-title="WebSocket 数据流">WebSocket 数据流</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#32c808cbe5-2" class="toc-h2 toc-link" data-title="认证">认证</a>
+                  </li>
+                  <li>
+                    <a href="#42034b88ca" class="toc-h2 toc-link" data-title="报价数据流">报价数据流</a>
+                  </li>
+              </ul>
+          </li>
+      </ul>
+        <ul class="toc-footer">
+        </ul>
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        <h1 id='185368440e'>更新日志</h1><h2 id='1-1-3-2022-3-16'>版本 1.1.3 (2022年3月16日)</h2>
+<ul>
+<li>增加了请求参数 <a href="#42034b88ca"><code>side</code></a>，以允许返回单边报价。</li>
+</ul>
+<h2 id='1-1-2-2022-1-25'>版本 1.1.2 (2022年1月25日)</h2>
+<ul>
+<li>更新 <a href="#a61744ae67"><code>接受报价</code></a> 以允许部分接受场外交易报价。</li>
+</ul>
+<h2 id='1-1-1-2021-11-24'>版本 1.1.1 (2021年11月24日)</h2>
+<ul>
+<li>添加了 <code>unsubcribe-quote</code> 和 <code>unsubscribe-quote-all</code> 操作代码以取消订阅场外交易报价的流。</li>
+</ul>
+<h2 id='1-1-0-2021-9-17'>版本 1.1.0 (2021年9月17日)</h2>
+<ul>
+<li>添加了 <a href="#42034b88ca"><code>报价数据流</code></a> WebSocket 主题，用于订阅场外市场的价格流。</li>
+</ul>
+<h1 id='5060421d15'>概览</h1><h2 id='api'>生成API密钥</h2>
+<p>在使用经过身份验证的API之前，您需要在BTSE平台上创建API密钥。要创建API密钥，您可以按照以下步骤操作：</p>
+
+<ul>
+<li>使用用户名/电子邮件和密码登录到BTSE网站</li>
+<li>单击右上角的“帐户”</li>
+<li>选择API选项卡</li>
+<li>单击“新API”按钮以创建API密钥和口令。（注意：口令只会显示一次）</li>
+<li>使用您的API密钥和口令构建签名。</li>
+</ul>
+<h2 id='666564834a'>终端点</h2>
+<ul>
+<li>生产环境
+
+<ul>
+<li>HTTP
+
+<ul>
+<li><code>https://api.btse.com/otc</code></li>
+</ul></li>
+<li>WebSocket
+
+<ul>
+<li><code>wss://ws.btse.com/ws/otc</code></li>
+</ul></li>
+</ul></li>
+<li>测试环境
+
+<ul>
+<li>HTTP
+
+<ul>
+<li><code>https://testapi.btse.io/otc</code></li>
+</ul></li>
+<li>WebSocket
+
+<ul>
+<li><code>wss://testws.btse.io/ws/otc</code></li>
+</ul></li>
+</ul></li>
+</ul>
+<h2 id='32c808cbe5'>认证</h2>
+<ul>
+<li><p>API密钥（request-api）</p>
+
+<ul>
+<li>参数名称：<code>request-api</code>，位置：头部。API密钥以string形式从BTSE平台获取</li>
+</ul></li>
+<li><p>API密钥（request-nonce）</p>
+
+<ul>
+<li>参数名称：<code>request-nonce</code>，位置：头部。当前时间戳的long表示</li>
+</ul></li>
+<li><p>API密钥（request-sign）</p>
+
+<ul>
+<li>参数名称：<code>request-sign</code>，位置：头部。基于以下算法生成的综合签名：Signature=HMAC.Sha384（secretkey，（urlpath + request-nonce + bodyStr））（注意：当没有数据时，bodyStr = &#39;&#39;）：</li>
+</ul></li>
+</ul>
+<h3 id='1'>示例 1：查询行情</h3>
+<blockquote>
+<p><strong>HMAC SHA384签名</strong></p>
+</blockquote>
+<div class="highlight"><pre class="highlight shell tab-shell"><code><span class="nv">$ </span><span class="nb">echo</span> <span class="nt">-n</span> <span class="s2">"/api/v1/quote1624985375123{</span><span class="se">\"</span><span class="s2">orderSizeInBaseCurrency</span><span class="se">\"</span><span class="s2">:1,</span><span class="se">\"</span><span class="s2">orderAmountInOrderCurrency</span><span class="se">\"</span><span class="s2">:0,</span><span class="se">\"</span><span class="s2">side</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">buy</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">baseCurrency</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">BTC</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">orderCurrency</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">USD</span><span class="se">\"</span><span class="s2">}"</span> | openssl dgst <span class="nt">-sha384</span> <span class="nt">-hmac</span> <span class="s2">"848db84ac252b6726e5f6e7a711d9c96d9fd77d020151b45839a5b59c37203bx"</span>
+<span class="o">(</span>stdin<span class="o">)=</span> 8ee43810606da581fb6ce03e10370f89125c2269a64de832a55cea219795e9ae0c3df86b51afbafdd28c03b16acd1427
+</code></pre></div>
+<ul>
+<li>下单的终端点是 <code>https://api.btse.com/otc/api/v1/quote</code></li>
+<li>假设我们有以下数值：
+
+<ul>
+<li>request-nonce: <code>1624985375123</code></li>
+<li>request-api: <code>4e9536c79f0fdd72bf04f2430982d3f61d9d76c996f0175bbba470d69d59816x</code></li>
+<li>secret: <code>848db84ac252b6726e5f6e7a711d9c96d9fd77d020151b45839a5b59c37203bx</code></li>
+<li>Path：<code>/api/v1/quote</code></li>
+<li>Body：<code>{&quot;orderSizeInBaseCurrency&quot;:1,&quot;orderAmountInOrderCurrency&quot;:0,&quot;side&quot;:&quot;buy&quot;,&quot;baseCurrency&quot;:&quot;BTC&quot;,&quot;orderCurrency&quot;:&quot;USD&quot;}</code></li>
+<li>Encrypted Text：<code>&quot;/api/v1/quote1624985375123{&quot;orderSizeInBaseCurrency&quot;:1,&quot;orderAmountInOrderCurrency&quot;:0,&quot;side&quot;:&quot;buy&quot;,&quot;baseCurrency&quot;:&quot;BTC&quot;,&quot;orderCurrency&quot;:&quot;USD&quot;}&quot;</code></li>
+</ul></li>
+<li>生成的签名将是：
+
+<ul>
+<li>request-sign: <code>8ee43810606da581fb6ce03e10370f89125c2269a64de832a55cea219795e9ae0c3df86b51afbafdd28c03b16acd1427</code></li>
+</ul></li>
+</ul>
+<h2 id='887e990e90'>速率限制</h2>
+<ul>
+<li>实施以下速率限制：</li>
+</ul>
+
+<p>BTSE的速率限制如下：</p>
+
+<ul>
+<li>每个API：<code>每秒15个请求</code></li>
+<li>每个用户：<code>每秒30个请求</code></li>
+</ul>
+<h2 id='api-2'>API状态代码</h2>
+<p>每个API将返回以下HTTP状态之一：</p>
+
+<ul>
+<li>200 - API请求成功，有关预期的有效载荷，请参考特定的API响应</li>
+<li>400 - 错误请求。服务器将不会处理此请求。通常是由于请求中发送了无效参数</li>
+<li>401 - 未经授权的请求。服务器不会处理此请求，因为它没有有效的身份验证凭据</li>
+<li>403 - 禁止请求。提供了凭据，但不足以执行请求</li>
+<li>404 - 未找到。表示服务器理解请求，但无法找到目标资源的正确表示</li>
+<li>405 - 不允许的方法。表示请求方法对请求的服务器不知道</li>
+<li>408 - 请求超时。表示服务器未完成请求。BTSE API的超时设置为30秒</li>
+<li>429 - 请求太多。表示客户端已超过服务器设置的速率限制。有关更多详细信息，请参考速率限制</li>
+<li>500 - 内部服务器错误。表示服务器遇到意外条件，导致无法完成请求</li>
+</ul>
+<h2 id='api-enum'>API ENUM</h2>
+<p>连接到BTSE API时，您将遇到代表BTSE中不同状态或状态类型的数字代码。以下部分提供了您可能看到的代码列表。</p>
+
+<ul>
+<li>30000: OTC订单查询</li>
+<li>30001: OTC订单报价</li>
+<li>30007: OTC订单完成成功</li>
+<li>30008: OTC订单重新报价</li>
+</ul>
+<h1 id='5f059df046'>工作流程</h1>
+<ul>
+<li>请求报价以从BTSE获取OTC报价</li>
+<li>BTSE根据请求响应报价</li>
+<li>如果用户选择接受报价，则将报价发送给BTSE（已接受的报价）</li>
+<li>如果BTSE接受了报价，则交易完成（交易已完成）</li>
+<li>如果BTSE拒绝了报价，则BTSE将以拒绝原因响应的更新报价</li>
+<li>如果用户拒绝了报价，BTSE将响应报价是否成功被拒绝（已拒绝的报价）</li>
+</ul>
+<h1 id='otc'>OTC终端点</h1><h2 id='7335b2436c'>市场摘要</h2>
+<blockquote>
+<p>响应</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"assetName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BTC"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"maxOrderSizes"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="mi">5000</span><span class="p">,</span><span class="w">
+    </span><span class="mi">5000</span><span class="p">,</span><span class="w">
+    </span><span class="mi">5000</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"maxOrderValues"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="mi">100000</span><span class="p">,</span><span class="w">
+    </span><span class="mi">100000</span><span class="p">,</span><span class="w">
+    </span><span class="mi">100000</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"minOrderSizes"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="mf">0.05</span><span class="p">,</span><span class="w">
+    </span><span class="mf">0.05</span><span class="p">,</span><span class="w">
+    </span><span class="mf">0.05</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"minOrderValues"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="mf">0.0025</span><span class="p">,</span><span class="w">
+    </span><span class="mf">0.0025</span><span class="p">,</span><span class="w">
+    </span><span class="mf">0.0025</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"supportQuoteCurrencies"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<p><code>GET /api/v1/getMarket</code></p>
+
+<p>获取OTC市场信息</p>
+<h3 id='05a22d5a79'>响应内容</h3>
+<table><thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>描述</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>assetName</td>
+<td>string</td>
+<td>Yes</td>
+<td>资产名称</td>
+</tr>
+<tr>
+<td>maxOrderSizes</td>
+<td>double</td>
+<td>Yes</td>
+<td>最大订单大小</td>
+</tr>
+<tr>
+<td>maxOrderValues</td>
+<td>double</td>
+<td>Yes</td>
+<td>最大订单名义价值</td>
+</tr>
+<tr>
+<td>minOrderSizes</td>
+<td>double</td>
+<td>Yes</td>
+<td>最小订单大小</td>
+</tr>
+<tr>
+<td>minOrderValues</td>
+<td>double</td>
+<td>Yes</td>
+<td>最小订单名义价值</td>
+</tr>
+<tr>
+<td>supportQuoteCurrencies</td>
+<td>string array</td>
+<td>Yes</td>
+<td>支持的报价货币</td>
+</tr>
+</tbody></table>
+<h2 id='db8afb45d1'>请求报价</h2>
+<blockquote>
+<p>请求</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"baseCurrency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BTC, USDT"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"clientOrderId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BTCUSD0304"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"orderAmountInOrderCurrency"</span><span class="p">:</span><span class="w"> </span><span class="mi">2350</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"orderCurrency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"USD, EUR"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"orderSizeInBaseCurrency"</span><span class="p">:</span><span class="w"> </span><span class="mf">20.05</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"side"</span><span class="p">:</span><span class="w"> </span><span class="s2">"buy, sell"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>响应</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"markets"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"assetName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"maxOrderSizes"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="mi">0</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="nl">"maxOrderValues"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="mi">0</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="nl">"minOrderSizes"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="mi">0</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="nl">"minOrderValues"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="mi">0</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="nl">"originTimestamp"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"packetID"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"packetTimestamp"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"parametersMap"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"property1"</span><span class="p">:</span><span class="w"> </span><span class="p">{},</span><span class="w">
+        </span><span class="nl">"property2"</span><span class="p">:</span><span class="w"> </span><span class="p">{}</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"processingTimestamp"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"requestId"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"supportQuoteCurrencies"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"string"</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="nl">"trackingID"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"quoteAmountToDeduct"</span><span class="p">:</span><span class="w"> </span><span class="mf">21563.143</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"quoteAmountToReceive"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.311</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"quoteCurrencyToDeductIn"</span><span class="p">:</span><span class="w"> </span><span class="s2">"EUR"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"quoteCurrencyToReceiveIn"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BTC"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"quoteId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1e5e9ec8-dfb1-****-****-99e20d476c21"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"quotePriceInOrderCurrency"</span><span class="p">:</span><span class="w"> </span><span class="mi">6431</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"quotePriceInUSD"</span><span class="p">:</span><span class="w"> </span><span class="mi">6431</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"quoteTimestamp"</span><span class="p">:</span><span class="w"> </span><span class="mi">1586225934778</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"quoteValidDurationMs"</span><span class="p">:</span><span class="w"> </span><span class="mi">10000</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="mi">30001</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<p><code>POST /api/v1/quote</code></p>
+
+<p>请求报价</p>
+<h3 id='1f9ac54b15'>请求参数</h3>
+<table><thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>描述</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>baseCurrency</td>
+<td>string</td>
+<td>Yes</td>
+<td>基础货币 (例如 BTC)</td>
+</tr>
+<tr>
+<td>orderCurrency</td>
+<td>string</td>
+<td>Yes</td>
+<td>订单货币</td>
+</tr>
+<tr>
+<td>orderSizeInBaseCurrency</td>
+<td>double</td>
+<td>Yes</td>
+<td>基础货币中的订单大小</td>
+</tr>
+<tr>
+<td>orderAmountInOrderCurrency</td>
+<td>double</td>
+<td>Yes</td>
+<td>订单货币中的订单金额</td>
+</tr>
+<tr>
+<td>clientOrderId</td>
+<td>double</td>
+<td>Yes</td>
+<td>自定义客户订单ID</td>
+</tr>
+<tr>
+<td>side</td>
+<td>string</td>
+<td>Yes</td>
+<td>订单方向，BUY或SELL</td>
+</tr>
+</tbody></table>
+<h3 id='05a22d5a79-2'>响应内容</h3>
+<table><thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>描述</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>markets</td>
+<td>资产</td>
+<td>Yes</td>
+<td>资产信息</td>
+</tr>
+<tr>
+<td>quoteAmountToDeduct</td>
+<td>double</td>
+<td>Yes</td>
+<td>需要扣除的报价金额</td>
+</tr>
+<tr>
+<td>quoteAmountToReceive</td>
+<td>double</td>
+<td>Yes</td>
+<td>需要接收的报价金额</td>
+</tr>
+<tr>
+<td>quoteCurrencyToDeductIn</td>
+<td>string</td>
+<td>Yes</td>
+<td>扣除的报价货币</td>
+</tr>
+<tr>
+<td>quoteCurrencyToReceiveIn</td>
+<td>string</td>
+<td>Yes</td>
+<td>接收的报价货币</td>
+</tr>
+<tr>
+<td>quoteId</td>
+<td>string</td>
+<td>Yes</td>
+<td>报价ID</td>
+</tr>
+<tr>
+<td>quotePriceInOrderCurrency</td>
+<td>double</td>
+<td>Yes</td>
+<td>订单货币中的报价价格</td>
+</tr>
+<tr>
+<td>quotePriceInUSD</td>
+<td>long</td>
+<td>Yes</td>
+<td>报价价格 (USD)</td>
+</tr>
+<tr>
+<td>quoteTimestamp</td>
+<td>long</td>
+<td>Yes</td>
+<td>报价时间戳</td>
+</tr>
+<tr>
+<td>quoteValidDurationMs</td>
+<td>long</td>
+<td>Yes</td>
+<td>报价有效期</td>
+</tr>
+<tr>
+<td>status</td>
+<td>integer</td>
+<td>Yes</td>
+<td>订单状态，具有以下值：<br/>8: 余额不足<br/>30001: 订单报价<br/>30008: OTC订单重新报价<br/>30007: OTC订单已成功完成<br/>40001: 服务不可用<br/>40003: 拒绝</td>
+</tr>
+</tbody></table>
+<h2 id='a61744ae67'>接受报价</h2>
+<blockquote>
+<p>请求</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"quoteId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1e5e9ec8-dfb1-****-****-99e20d476c21"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"baseAmount"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"quoteAmount"</span><span class="p">:</span><span class="w"> </span><span class="mi">300</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>响应</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="mi">30007</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"quoteId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1e5e9ec8-dfb1-****-****-99e20d476c21"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"quoteValidDurationMs"</span><span class="p">:</span><span class="w"> </span><span class="mi">60000</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"quoteAmountToReceive"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.00823598</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"quoteCurrencyToReceiveIn"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BTC"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"quoteAmountToDeduct"</span><span class="p">:</span><span class="w"> </span><span class="mf">300.000102</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"quoteCurrencyToDeductIn"</span><span class="p">:</span><span class="w"> </span><span class="s2">"USD"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"quoteTimestamp"</span><span class="p">:</span><span class="w"> </span><span class="mi">1643084422836</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"quotePriceInOrderCurrency"</span><span class="p">:</span><span class="w"> </span><span class="mf">36290.47533</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"quotePriceInUSD"</span><span class="p">:</span><span class="w"> </span><span class="mf">36290.4753</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"side"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BUY"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<p><code>POST /api/v1/accept/{quoteId}</code></p>
+
+<p>接受报价。
+该报价允许通过在请求体中获取 <code>baseAmount</code> 或 <code>quoteAmount</code> 来<strong>部分接受</strong>，
+这分别对应 <a href="#db8afb45d1"><code>报价</code></a>中的 <code>orderSizeInBaseCurrency</code> 和 <code>orderAmountInOrderCurrency</code>。
+请注意，如果金额大于您报价的数字，只会接受报价的数字。</p>
+<h3 id='1f9ac54b15-2'>请求参数</h3>
+<table><thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>描述</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>quoteId</td>
+<td>string</td>
+<td>Yes</td>
+<td>作为路径参数提供的报价ID</td>
+</tr>
+<tr>
+<td>baseAmount</td>
+<td>double</td>
+<td>No</td>
+<td>接受报价的部分金额</td>
+</tr>
+<tr>
+<td>quoteAmount</td>
+<td>double</td>
+<td>No</td>
+<td>接受报价的部分金额</td>
+</tr>
+</tbody></table>
+<h3 id='05a22d5a79-3'>响应内容</h3>
+<table><thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>描述</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>status</td>
+<td>integer</td>
+<td>Yes</td>
+<td>订单状态，其值为：<br/>8: 余额不足<br/>30001: 订单报价<br/>30008: OTC订单重新报价<br/>30007: OTC订单成功完成<br/>40001: 服务不可用<br/>40003: 被拒绝</td>
+</tr>
+<tr>
+<td>quoteId</td>
+<td>string</td>
+<td>Yes</td>
+<td>报价ID</td>
+</tr>
+<tr>
+<td>quoteValidDurationMs</td>
+<td>long</td>
+<td>Yes</td>
+<td>报价有效期</td>
+</tr>
+<tr>
+<td>quoteAmountToReceive</td>
+<td>double</td>
+<td>Yes</td>
+<td>应收报价金额</td>
+</tr>
+<tr>
+<td>quoteCurrencyToReceiveIn</td>
+<td>string</td>
+<td>Yes</td>
+<td>应收报价货币</td>
+</tr>
+<tr>
+<td>quoteAmountToDeduct</td>
+<td>double</td>
+<td>Yes</td>
+<td>扣除的报价金额</td>
+</tr>
+<tr>
+<td>quoteCurrencyToDeductIn</td>
+<td>string</td>
+<td>Yes</td>
+<td>扣除的报价货币</td>
+</tr>
+<tr>
+<td>quoteTimestamp</td>
+<td>long</td>
+<td>Yes</td>
+<td>报价时间戳</td>
+</tr>
+<tr>
+<td>quotePriceInOrderCurrency</td>
+<td>double</td>
+<td>Yes</td>
+<td>订单货币中的报价价格</td>
+</tr>
+<tr>
+<td>quotePriceInUSD</td>
+<td>long</td>
+<td>Yes</td>
+<td>USD中的报价价格</td>
+</tr>
+<tr>
+<td>side</td>
+<td>string</td>
+<td>Yes</td>
+<td>BUY或SELL</td>
+</tr>
+</tbody></table>
+<h2 id='91cb77f2de'>拒绝报价</h2>
+<blockquote>
+<p>响应</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"errorCode"</span><span class="p">:</span><span class="w"> </span><span class="mi">-1</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre></div>
+<p><code>POST /otc/api/v1/reject/{quoteId}</code></p>
+<h2 id='0f65a9a797'>拒绝当前报价</h2><h3 id='1f9ac54b15-3'>请求参数</h3>
+<table><thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>描述</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>quoteId</td>
+<td>string</td>
+<td>Yes</td>
+<td>路径参数中提供的报价 ID</td>
+</tr>
+</tbody></table>
+<h2 id='90376e83a0'>查询订单</h2>
+<blockquote>
+<p>响应</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"markets"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"assetName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"maxOrderSizes"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="mi">0</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="nl">"maxOrderValues"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="mi">0</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="nl">"minOrderSizes"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="mi">0</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="nl">"minOrderValues"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="mi">0</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="nl">"originTimestamp"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"packetID"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"packetTimestamp"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"parametersMap"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"property1"</span><span class="p">:</span><span class="w"> </span><span class="p">{},</span><span class="w">
+        </span><span class="nl">"property2"</span><span class="p">:</span><span class="w"> </span><span class="p">{}</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"processingTimestamp"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"requestId"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"supportQuoteCurrencies"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"string"</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="nl">"trackingID"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"quoteAmountToDeduct"</span><span class="p">:</span><span class="w"> </span><span class="mf">21563.143</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"quoteAmountToReceive"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.311</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"quoteCurrencyToDeductIn"</span><span class="p">:</span><span class="w"> </span><span class="s2">"EUR"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"quoteCurrencyToReceiveIn"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BTC"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"quoteId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1e5e9ec8-dfb1-****-****-99e20d476c21"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"quotePriceInOrderCurrency"</span><span class="p">:</span><span class="w"> </span><span class="mi">6431</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"quotePriceInUSD"</span><span class="p">:</span><span class="w"> </span><span class="mi">6431</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"quoteTimestamp"</span><span class="p">:</span><span class="w"> </span><span class="mi">1586225934778</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"quoteValidDurationMs"</span><span class="p">:</span><span class="w"> </span><span class="mi">10000</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="mi">30001</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<p><code>POST /api/v1/queryOrder/{quoteId}</code></p>
+
+<p>查询订单信息</p>
+<h3 id='1f9ac54b15-4'>请求参数</h3>
+<table><thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>描述</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>quoteId</td>
+<td>string</td>
+<td>Yes</td>
+<td>路径参数中提供的报价 ID</td>
+</tr>
+</tbody></table>
+<h3 id='05a22d5a79-4'>响应内容</h3>
+<table><thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>描述</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>markets</td>
+<td>资产</td>
+<td>Yes</td>
+<td>资产信息</td>
+</tr>
+<tr>
+<td>quoteAmountToDeduct</td>
+<td>double</td>
+<td>Yes</td>
+<td>需要扣除的报价金额</td>
+</tr>
+<tr>
+<td>quoteAmountToReceive</td>
+<td>double</td>
+<td>Yes</td>
+<td>需要接收的报价金额</td>
+</tr>
+<tr>
+<td>quoteCurrencyToDeductIn</td>
+<td>string</td>
+<td>Yes</td>
+<td>扣除的报价货币</td>
+</tr>
+<tr>
+<td>quoteCurrencyToReceiveIn</td>
+<td>string</td>
+<td>Yes</td>
+<td>接收的报价货币</td>
+</tr>
+<tr>
+<td>quoteId</td>
+<td>string</td>
+<td>Yes</td>
+<td>报价 ID</td>
+</tr>
+<tr>
+<td>quotePriceInOrderCurrency</td>
+<td>double</td>
+<td>Yes</td>
+<td>订单货币中的报价价格</td>
+</tr>
+<tr>
+<td>quotePriceInUSD</td>
+<td>long</td>
+<td>Yes</td>
+<td>报价价格（美元）</td>
+</tr>
+<tr>
+<td>quoteTimestamp</td>
+<td>long</td>
+<td>Yes</td>
+<td>报价时间戳</td>
+</tr>
+<tr>
+<td>quoteValidDurationMs</td>
+<td>long</td>
+<td>Yes</td>
+<td>报价有效期</td>
+</tr>
+<tr>
+<td>status</td>
+<td>integer</td>
+<td>Yes</td>
+<td>具有以下值的订单状态：<br/>8: 余额不足<br/>30001: 订单报价<br/>30008: OTC 订单重新报价<br/>30007: OTC 订单成功完成<br/>40001: 服务不可用<br/>40003: 已拒绝</td>
+</tr>
+</tbody></table>
+<h1 id='websocket'>WebSocket 数据流</h1><h2 id='32c808cbe5-2'>认证</h2>
+<blockquote>
+<p>请求</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"op"</span><span class="p">:</span><span class="s2">"authKeyExpires"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"args"</span><span class="p">:[</span><span class="s2">"APIKey"</span><span class="p">,</span><span class="w"> </span><span class="s2">"nonce"</span><span class="p">,</span><span class="w"> </span><span class="s2">"signature"</span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<p>认证 WebSocket 会话以订阅经过身份验证的 WebSocket 主题。假设我们有以下值：</p>
+
+<ul>
+<li><code>request-nonce</code>: 1624985375123</li>
+<li><code>request-api</code>: 4e9536c79f0fdd72bf04f2430982d3f61d9d76c996f0175bbba470d69d59816x</li>
+<li><code>secret</code>: 848db84ac252b6726e5f6e7a711d9c96d9fd77d020151b45839a5b59c37203bx</li>
+</ul>
+
+<p>我们的订阅请求将是：</p>
+<div class="highlight"><pre class="highlight plaintext"><code>{
+  "op":"authKeyExpires",
+  "args":["4e9536c79f0fdd72bf04f2430982d3f61d9d76c996f0175bbba470d69d59816x", "1624985375123", "c410d38c681579adb335885800cff24c66171b7cc8376cfe43da1408c581748156b89bcc5a115bb496413bda481139fb"]
+}
+</code></pre></div><h3 id='1f9ac54b15-5'>请求参数</h3>
+<p>下面详细说明了需要发送的参数。</p>
+
+<table><thead>
+<tr>
+<th>索引</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>描述</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>0</td>
+<td>string</td>
+<td>Yes</td>
+<td>第一个参数是 API 密钥</td>
+</tr>
+<tr>
+<td>1</td>
+<td>long</td>
+<td>Yes</td>
+<td>Nonce，即当前时间戳</td>
+</tr>
+<tr>
+<td>2</td>
+<td>string</td>
+<td>Yes</td>
+<td>生成的签名</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+<p>生成签名</p>
+</blockquote>
+<div class="highlight"><pre class="highlight shell tab-shell"><code><span class="nb">echo</span> <span class="nt">-n</span> <span class="s2">"/ws/otc1624985375123"</span>  | openssl dgst <span class="nt">-sha384</span> <span class="nt">-hmac</span> <span class="s2">"848db84ac252b6726e5f6e7a711d9c96d9fd77d020151b45839a5b59c37203bx"</span>
+<span class="o">(</span>stdin<span class="o">)=</span> c410d38c681579adb335885800cff24c66171b7cc8376cfe43da1408c581748156b89bcc5a115bb496413bda481139fb
+</code></pre></div><h2 id='42034b88ca'>报价数据流</h2>
+<blockquote>
+<p>请求</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"op"</span><span class="p">:</span><span class="w"> </span><span class="s2">"quote"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"symbol"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BTC-USD"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"side"</span><span class="p">:</span><span class="w"> </span><span class="s2">"buy"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"clOrderId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ClientOrder1"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"quantity"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"quantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BTC"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div><div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"op"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unsubscribe-quote"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"symbol"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BTC-USD"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"clOrderId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ClientOrder1"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"quantity"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"quantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BTC"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div><div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"op"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unsubscribe-quote-all"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>响应</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"topic"</span><span class="p">:</span><span class="w"> </span><span class="s2">"quote"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"buyQuoteId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"015f05ba-1d55-46d7-94d9-214229414ae7"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"sellQuoteId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0683a41a-a2ad-467b-99b3-241f3ab0cec4"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"clOrderId"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"buyQuantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"buyUnitPrice"</span><span class="p">:</span><span class="w"> </span><span class="mf">47865.580838</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"buyTotalAmount"</span><span class="p">:</span><span class="w"> </span><span class="mf">478655.80838</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"sellQuantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"sellUnitPrice"</span><span class="p">:</span><span class="w"> </span><span class="mf">47649.40351972</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"sellTotalAmount"</span><span class="p">:</span><span class="w"> </span><span class="mf">476494.0352</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"reason"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre></div>
+<p>通过订阅 <code>quote</code> WebSocket，接收报价数据流。WebSocket 主题将不断向订阅者推送新价格。要接受报价，请使用 <code>/accept</code> API 指示买入或卖出报价 ID。</p>
+<h3 id='1f9ac54b15-6'>请求参数</h3>
+<table><thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>描述</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>op</td>
+<td>string</td>
+<td>Yes</td>
+<td>操作，此处为 <code>quote</code>、<code>unsubscribe-quote</code> 或 <code>unsubscribe-quote-all</code></td>
+</tr>
+<tr>
+<td>symbol</td>
+<td>string</td>
+<td>Yes</td>
+<td>市场标志，参考 <code>getMarkets</code> API</td>
+</tr>
+<tr>
+<td>side</td>
+<td>string</td>
+<td>No</td>
+<td>报价方向，<code>buy</code> 或 <code>sell</code>，区分大小写。如果此字段为空/为null，则将返回两个方向的报价</td>
+</tr>
+<tr>
+<td>clOrderId</td>
+<td>string</td>
+<td>No</td>
+<td>客户自定义订单 ID</td>
+</tr>
+<tr>
+<td>quantity</td>
+<td>double</td>
+<td>Yes</td>
+<td>订单数量</td>
+</tr>
+<tr>
+<td>currency</td>
+<td>string</td>
+<td>Yes</td>
+<td>可以是基础货币或报价货币。如果指定基础货币，那么报价流将以响应形式返回</td>
+</tr>
+</tbody></table>
+<h3 id='05a22d5a79-5'>响应内容</h3>
+<table><thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>是否必须</th>
+<th>描述</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>topic</td>
+<td>string</td>
+<td>Yes</td>
+<td>WebSocket 主题</td>
+</tr>
+<tr>
+<td>buyQuoteId</td>
+<td>string</td>
+<td>No</td>
+<td>买方的报价 ID。如果该值为空/为null，则表示您的 WebSocket 流未经身份验证或您未订阅此方向</td>
+</tr>
+<tr>
+<td>sellQuoteId</td>
+<td>string</td>
+<td>No</td>
+<td>卖方的报价 ID。如果该值为空/为null，则表示您的 WebSocket 流未经身份验证或您未订阅此方向</td>
+</tr>
+<tr>
+<td>clOrderId</td>
+<td>string</td>
+<td>Yes</td>
+<td>用户自定义订单 ID</td>
+</tr>
+<tr>
+<td>buyQuantity</td>
+<td>double</td>
+<td>No</td>
+<td>基于报价请求的购买数量。如果该值为null，则表示您未订阅此方向</td>
+</tr>
+<tr>
+<td>buyUnitPrice</td>
+<td>double</td>
+<td>No</td>
+<td>基础符号每单位的单价。如果该值为null，则表示您未订阅此方向</td>
+</tr>
+<tr>
+<td>buyTotalAmount</td>
+<td>double</td>
+<td>No</td>
+<td>以报价货币支付的总价格。如果该值为null，则表示您未订阅此方向</td>
+</tr>
+<tr>
+<td>sellQuantity</td>
+<td>double</td>
+<td>No</td>
+<td>基于报价请求的销售数量。如果该值为null，则表示您未订阅此方向</td>
+</tr>
+<tr>
+<td>sellUnitPrice</td>
+<td>double</td>
+<td>No</td>
+<td>基础符号每单位的单价。如果该值为null，则表示您未订阅此方向</td>
+</tr>
+<tr>
+<td>sellTotalAmount</td>
+<td>double</td>
+<td>No</td>
+<td>以报价货币支付的总价格。如果该值为null，则表示您未订阅此方向</td>
+</tr>
+<tr>
+<td>status</td>
+<td>string</td>
+<td>No</td>
+<td>响应状态。如果该值为null，则表示您未订阅此方向</td>
+</tr>
+<tr>
+<td>reason</td>
+<td>string</td>
+<td>No</td>
+<td>如果返回错误，reason 字段将包含错误的原因</td>
+</tr>
+</tbody></table>
+
+<p></section></p>
+
+      </div>
+      <div class="dark-box">
+          <div class="lang-selector">
+                <a href="#" data-language-name="json">json</a>
+          </div>
+      </div>
+    </div>
+    <script>
+const DEFAULT_LANG = 'en';
+const IS_DEV = false;
+const DOCS_PREFIX = IS_DEV ? '/' : '/docs/';
+const TAB_MAP = {
+  spot: {
+    en: 'Spot',
+    cn: '现货'
+  },
+  futures: {
+    en: 'Futures',
+    cn: '期货'
+  },
+  futuresV2_2: {
+    en: 'FuturesV2.2',
+    cn: '期货V2.2'
+  },
+  otc: {
+    en: 'OTC',
+    cn: '场外交易'
+  },
+  wallet: {
+    en: 'Wallet/Convert/Transfer',
+    cn: '钱包/转换/转账'
+  },
+  streaming: {
+    en: 'Streaming',
+    cn: '數據流'
+  },
+  fix: {
+    en: 'FIX',
+    cn: 'FIX'
+  },
+  earn: {
+    en: 'Earn',
+    cn: '賺幣'
+  }
+};
+
+function getUrlRelativePath() {
+  let url = document.location.toString();
+  let arrUrl = url.split('//');
+  let start = arrUrl[1].indexOf('/');
+  let relUrl = arrUrl[1].substring(start);
+  if (relUrl.indexOf('?') !== -1) {
+    relUrl = relUrl.split("?")[0];
+  }
+  if (relUrl.indexOf('#') !== -1) {
+    relUrl = relUrl.split('#')[0];
+  }
+  return relUrl;
+}
+
+function capitalizeFirstLetter(s) {
+  return s.charAt(0).toUpperCase() + s.slice(1);
+}
+
+function getLang() {
+  const url = getUrlRelativePath();
+  const isEN = url.indexOf('cn') === -1;
+  return isEN ? 'en' : 'cn';
+}
+
+function getTabTemplate(isTab, href, tabKey, tabText) {
+  const classList = isTab ? 'nav_cell nav_tab' : 'menu-row'
+  const idPrefix = isTab ? 'nav_link_' : 'menu-link-'
+  const linkClass = isTab ? 'nav-link' : 'menu-link'
+  return `
+    <span class="${classList}">
+      <a href="${href}" id="${idPrefix}${tabKey}" class="${linkClass}">${tabText}</a>
+    </span>
+  `
+}
+
+function generateNavHtml(lang, isTab) {
+  return Object.keys(TAB_MAP).map(tabKey => {
+    const tabText = TAB_MAP[tabKey][lang] || capitalizeFirstLetter(tabKey);
+    const href = `${DOCS_PREFIX}${tabKey}/${lang}/`;
+    return getTabTemplate(isTab, href, tabKey, tabText);
+  })
+}
+
+function addChangeLanguageLink(lang) {
+  // add change lang link in navbar.
+  const langText = lang === 'en' ? '中文' : 'English';
+  const langHref = lang === 'en' ? location.href.replace('/en/', '/cn/') : location.href.replace('/cn/', '/en/');
+  const langLink = `<a class="change-lang-link" href="${langHref}">${langText}</a>`;
+  $('#navBox').append(`<span class="nav_cell">${langLink}</span>`);
+}
+
+$(function() {
+  const lang = getLang();
+  $('#navBox').html(generateNavHtml(lang, true));
+  $('#menuDropdown').html(generateNavHtml(lang, false));
+  const tabList = Object.keys(TAB_MAP);
+  for (let i = 0; i < tabList.length; i ++) {
+    const tabKey = tabList[i];
+    if (location.href.indexOf(`/${tabKey}/`) > 0) {
+      $('.nav-link').removeClass('current');
+      $(`#nav_link_${tabKey}`).addClass('current');
+      $('.menu-link').removeClass('current');
+      $(`#menu-link-${tabKey}`).addClass('current');
+      break;
+    }
+  }
+  $('#menuDropdownBtn').click(() => {
+    $('.menu-dropdown').toggleClass('hide');
+  });
+  addChangeLanguageLink(lang);
+});
+  </script>
+  </body>
+</html>

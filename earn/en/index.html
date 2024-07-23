@@ -1,0 +1,1082 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>BTSE API Documentation</title>
+    <link href="../../images/favicon-3eb77247.ico" rel="icon" type="image/ico" />
+    <style>
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cpf {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s, .highlight .sa, .highlight .dl {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf, .highlight .fm {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv, .highlight .vm {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #f92672;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+    </style>
+    <link href="../../stylesheets/screen-bcf56b31.css" rel="stylesheet" media="screen" />
+    <link href="../../stylesheets/print-953e3353.css" rel="stylesheet" media="print" />
+      <script src="../../javascripts/all-a9fde460.js"></script>
+
+  </head>
+
+  <body class="earn earn_en earn_en_index" data-languages="[&quot;json&quot;]">
+    <a href="#" id="nav-button">
+      <span>
+        <img src="../../images/navbar-cad8cdcb.png" alt="" />
+      </span>
+    </a>
+    <header>
+    <div class="flex_box">
+      <img src="../../images/logo-d7d2b532.svg" class="logo" alt="" />
+      <div class="nav-row-wrap">
+        <div id="navBox" class="nav_box"></div>
+        <div id="menuDropdownBtn" class="noselect menu-dropdown-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          <div id="menuDropdown" class="menu-dropdown hide"></div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+    <div class="toc-wrapper">
+        <div class="lang-selector">
+              <a href="#" data-language-name="json">json</a>
+        </div>
+        <div class="search">
+          <input type="text" class="search" id="input-search" placeholder="Search">
+        </div>
+        <ul class="search-results"></ul>
+      <ul id="toc" class="toc-list-h1">
+          <li>
+            <a href="#change-log" class="toc-h1 toc-link" data-title="Change Log">Change Log</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#version-1-0-8th-december-2021" class="toc-h2 toc-link" data-title="Version 1.0 (8th December 2021)">Version 1.0 (8th December 2021)</a>
+                  </li>
+                  <li>
+                    <a href="#version-1-1-13th-december-2021" class="toc-h2 toc-link" data-title="Version 1.1 (13th December 2021)">Version 1.1 (13th December 2021)</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#overview" class="toc-h1 toc-link" data-title="Overview">Overview</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#generating-api-key" class="toc-h2 toc-link" data-title="Generating API Key">Generating API Key</a>
+                  </li>
+                  <li>
+                    <a href="#endpoints" class="toc-h2 toc-link" data-title="Endpoints">Endpoints</a>
+                  </li>
+                  <li>
+                    <a href="#authentication" class="toc-h2 toc-link" data-title="Authentication">Authentication</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#investment-endpoints" class="toc-h1 toc-link" data-title="Investment Endpoints">Investment Endpoints</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#query-investment-products" class="toc-h2 toc-link" data-title="Query Investment Products">Query Investment Products</a>
+                  </li>
+                  <li>
+                    <a href="#deposit-investment" class="toc-h2 toc-link" data-title="Deposit Investment">Deposit Investment</a>
+                  </li>
+                  <li>
+                    <a href="#renew-investment" class="toc-h2 toc-link" data-title="Renew Investment">Renew Investment</a>
+                  </li>
+                  <li>
+                    <a href="#redeem-investment" class="toc-h2 toc-link" data-title="Redeem Investment">Redeem Investment</a>
+                  </li>
+                  <li>
+                    <a href="#query-investment-orders" class="toc-h2 toc-link" data-title="Query Investment Orders">Query Investment Orders</a>
+                  </li>
+                  <li>
+                    <a href="#query-investment-history" class="toc-h2 toc-link" data-title="Query Investment History">Query Investment History</a>
+                  </li>
+              </ul>
+          </li>
+      </ul>
+        <ul class="toc-footer">
+        </ul>
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        <h1 id='change-log'>Change Log</h1><h2 id='version-1-0-8th-december-2021'>Version 1.0 (8th December 2021)</h2>
+<ul>
+<li>Initial release of the earn(invest) api</li>
+</ul>
+<h2 id='version-1-1-13th-december-2021'>Version 1.1 (13th December 2021)</h2>
+<ul>
+<li>add missing pagination description in request and response from querying investment history</li>
+<li>add processing result to response of deposit/redeem investment</li>
+</ul>
+<h1 id='overview'>Overview</h1><h2 id='generating-api-key'>Generating API Key</h2>
+<p>You will need to create an API key on the BTSE platform before you can use authenticated APIs. To create API keys, you can follow the steps below:</p>
+
+<ul>
+<li>Login with your username / email and password into the BTSE website</li>
+<li>Click on “Account” on the top right hand corner</li>
+<li>Select the API tab</li>
+<li>Click on “New API” button to create an API key and passphrase. (Note: the passphrase will only appear once)</li>
+<li>Use your API key and passphrase to construct a signature.</li>
+</ul>
+<h2 id='endpoints'>Endpoints</h2>
+<ul>
+<li>Production
+
+<ul>
+<li>HTTP
+
+<ul>
+<li><code>https://api.btse.com/spot</code></li>
+</ul></li>
+</ul></li>
+<li>Testnet
+
+<ul>
+<li>HTTP
+
+<ul>
+<li><code>https://testapi.btse.io/spot</code></li>
+</ul></li>
+</ul></li>
+</ul>
+<h2 id='authentication'>Authentication</h2>
+<ul>
+<li><p>API Key (request-api)</p>
+
+<ul>
+<li>Parameter Name: <code>request-api</code>, in: header. API key is obtained from BTSE platform as a string</li>
+</ul></li>
+<li><p>API Key (request-nonce)</p>
+
+<ul>
+<li>Parameter Name: <code>request-nonce</code>, in: header. Representation of current timestamp in long format</li>
+</ul></li>
+<li><p>API Key (request-sign)</p>
+
+<ul>
+<li>Parameter Name: <code>request-sign</code>, in: header. A composite signature produced based on the following algorithm: Signature=HMAC.Sha384 (secretkey, (urlpath + request-nonce + bodyStr)) (note: bodyStr = &#39;&#39; when no data):</li>
+</ul></li>
+</ul>
+<h1 id='investment-endpoints'>Investment Endpoints</h1><h2 id='query-investment-products'>Query Investment Products</h2>
+<blockquote>
+<p>Response</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OPENETH00001"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ETH Flex Savings"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ETH"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Flex"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"startDate"</span><span class="p">:</span><span class="w"> </span><span class="mi">1610685918000</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"interestStartDate"</span><span class="p">:</span><span class="w"> </span><span class="mi">1610719200000</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"rates"</span><span class="p">:</span><span class="w">
+    </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"days"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.15</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"compounding"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"autoRenewSupported"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"dailyLimit"</span><span class="p">:</span><span class="w"> </span><span class="mf">10.0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"minSize"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.00000000</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"incrementalSize"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.00000000</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre></div>
+<p><code>GET /api/v3.2/invest/products</code></p>
+
+<p>Get all investment products</p>
+<h3 id='request-parameters'>Request Parameters</h3>
+<p>(None)</p>
+<h3 id='response-content'>Response Content</h3>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td>Yes</td>
+<td>Product id</td>
+</tr>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>Yes</td>
+<td>Product name</td>
+</tr>
+<tr>
+<td>currency</td>
+<td>string</td>
+<td>Yes</td>
+<td>Currency</td>
+</tr>
+<tr>
+<td>type</td>
+<td>string</td>
+<td>Yes</td>
+<td>Product type</td>
+</tr>
+<tr>
+<td>startDate</td>
+<td>long</td>
+<td>Yes</td>
+<td>Inventment start date</td>
+</tr>
+<tr>
+<td>interestStartDate</td>
+<td>long</td>
+<td>Yes</td>
+<td>Interest start date</td>
+</tr>
+<tr>
+<td>rates</td>
+<td>RateObject[]</td>
+<td>Yes</td>
+<td>Interest rate information</td>
+</tr>
+<tr>
+<td>compounding</td>
+<td>double</td>
+<td>Yes</td>
+<td>is product compounding</td>
+</tr>
+<tr>
+<td>autoRenewSupported</td>
+<td>double</td>
+<td>Yes</td>
+<td>is product supported renew automatically</td>
+</tr>
+<tr>
+<td>dailyLimit</td>
+<td>double</td>
+<td>Yes</td>
+<td>Daily invent amount limit</td>
+</tr>
+<tr>
+<td>minSize</td>
+<td>double</td>
+<td>Yes</td>
+<td>Minimum invest size</td>
+</tr>
+<tr>
+<td>incrementalSize</td>
+<td>double</td>
+<td>Yes</td>
+<td>Invest step size</td>
+</tr>
+</tbody></table>
+<h3 id='rateobject'>RateObject</h3>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>days</td>
+<td>integer</td>
+<td>Yes</td>
+<td>Duration in days</td>
+</tr>
+<tr>
+<td>rate</td>
+<td>double</td>
+<td>Yes</td>
+<td>Interest rate</td>
+</tr>
+</tbody></table>
+<h2 id='deposit-investment'>Deposit Investment</h2>
+<blockquote>
+<p>Request</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"productId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OPENUSDT0001"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"amount"</span><span class="p">:</span><span class="w"> </span><span class="mf">100.99</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"renew"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"day"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Reponse</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"success"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<p><code>POST /api/v3.2/invest/deposit</code></p>
+
+<p>Deposit an investment</p>
+<h3 id='request-parameters-2'>Request Parameters</h3>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>productId</td>
+<td>string</td>
+<td>Yes</td>
+<td>Invest product id</td>
+</tr>
+<tr>
+<td>amount</td>
+<td>double</td>
+<td>Yes</td>
+<td>Invest amount</td>
+</tr>
+<tr>
+<td>renew</td>
+<td>boolean</td>
+<td>Yes</td>
+<td>renew automatically</td>
+</tr>
+<tr>
+<td>day</td>
+<td>integer</td>
+<td>Yes</td>
+<td>Duration in days</td>
+</tr>
+</tbody></table>
+<h3 id='response-content-2'>Response Content</h3>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>success</td>
+<td>boolean</td>
+<td>Yes</td>
+<td>The processing result</td>
+</tr>
+</tbody></table>
+<h2 id='renew-investment'>Renew Investment</h2>
+<blockquote>
+<p>Request</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"orderId"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"autoRenew"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Response</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"orderId"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"autoRenew"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<p><code>POST /api/v3.2/invest/renew</code></p>
+
+<p>Renew an investment order</p>
+<h3 id='request-parameters-3'>Request Parameters</h3>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>orderId</td>
+<td>integer</td>
+<td>Yes</td>
+<td>Investment order id</td>
+</tr>
+<tr>
+<td>autoRenew</td>
+<td>boolean</td>
+<td>Yes</td>
+<td>renew automatically</td>
+</tr>
+</tbody></table>
+<h3 id='response-content-3'>Response Content</h3>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>orderId</td>
+<td>integer</td>
+<td>Yes</td>
+<td>Investment order id</td>
+</tr>
+<tr>
+<td>autoRenew</td>
+<td>boolean</td>
+<td>Yes</td>
+<td>status of autoRenew flag</td>
+</tr>
+</tbody></table>
+<h2 id='redeem-investment'>Redeem Investment</h2>
+<blockquote>
+<p>Request</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"orderId"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"amount"</span><span class="p">:</span><span class="w"> </span><span class="mf">12.34</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Reponse</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"success"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<p><code>POST /api/v3.2/invest/redeem</code></p>
+
+<p>Redeem an investment order</p>
+<h3 id='request-parameters-4'>Request Parameters</h3>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>orderId</td>
+<td>integer</td>
+<td>Yes</td>
+<td>Investment order id</td>
+</tr>
+<tr>
+<td>amount</td>
+<td>double</td>
+<td>Yes</td>
+<td>Redeem amount</td>
+</tr>
+</tbody></table>
+<h3 id='response-content-4'>Response Content</h3>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>success</td>
+<td>boolean</td>
+<td>Yes</td>
+<td>The processing result</td>
+</tr>
+</tbody></table>
+<h2 id='query-investment-orders'>Query Investment Orders</h2>
+<blockquote>
+<p>Response</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">456</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ETH Flex Savings"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ETH"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Flex"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.15</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"investAmt"</span><span class="p">:</span><span class="w"> </span><span class="mf">10.00000000</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"interestEarned"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.00031507</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"nextInterestPayoutTime"</span><span class="p">:</span><span class="w"> </span><span class="mi">1610632800000</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"startTime"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"endTime"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"duration"</span><span class="p">:</span><span class="w"> </span><span class="mi">86400000</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"payoutLockTime"</span><span class="p">:</span><span class="w"> </span><span class="mi">300000</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"autoRenew"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"compounding"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"autoRenewSupported"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"dailyLimit"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"redemptionProcessing"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre></div>
+<p><code>GET /api/v3.2/invest/orders</code></p>
+
+<p>Query investment orders</p>
+<h3 id='response-content-5'>Response Content</h3>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>integer</td>
+<td>Yes</td>
+<td>Order id</td>
+</tr>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>Yes</td>
+<td>Product name</td>
+</tr>
+<tr>
+<td>currency</td>
+<td>string</td>
+<td>Yes</td>
+<td>Currency</td>
+</tr>
+<tr>
+<td>type</td>
+<td>string</td>
+<td>Yes</td>
+<td>Product type</td>
+</tr>
+<tr>
+<td>rate</td>
+<td>boolean</td>
+<td>Yes</td>
+<td>Interest rate</td>
+</tr>
+<tr>
+<td>investAmt</td>
+<td>boolean</td>
+<td>Yes</td>
+<td>Amount</td>
+</tr>
+<tr>
+<td>interestEarned</td>
+<td>boolean</td>
+<td>Yes</td>
+<td>Intereset earned</td>
+</tr>
+<tr>
+<td>nextInterestPayoutTime</td>
+<td>boolean</td>
+<td>Yes</td>
+<td>Next interest payout time</td>
+</tr>
+<tr>
+<td>startTime</td>
+<td>boolean</td>
+<td>Yes</td>
+<td>Start time</td>
+</tr>
+<tr>
+<td>endTime</td>
+<td>boolean</td>
+<td>Yes</td>
+<td>End time</td>
+</tr>
+<tr>
+<td>duration</td>
+<td>boolean</td>
+<td>Yes</td>
+<td>Duration</td>
+</tr>
+<tr>
+<td>payoutLockTime</td>
+<td>boolean</td>
+<td>Yes</td>
+<td>Lock time of payout</td>
+</tr>
+<tr>
+<td>autoRenew</td>
+<td>boolean</td>
+<td>Yes</td>
+<td>renew automatically</td>
+</tr>
+<tr>
+<td>compounding</td>
+<td>boolean</td>
+<td>Yes</td>
+<td>is compounding</td>
+</tr>
+<tr>
+<td>autoRenewSupported</td>
+<td>boolean</td>
+<td>Yes</td>
+<td>is renew automatically supported</td>
+</tr>
+<tr>
+<td>redemptionProcessing</td>
+<td>boolean</td>
+<td>Yes</td>
+<td>is redemption processing</td>
+</tr>
+</tbody></table>
+<h2 id='query-investment-history'>Query Investment History</h2>
+<blockquote>
+<p>Response</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"totalRows"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"pageNumber"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"pageSize"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"txnTime"</span><span class="p">:</span><span class="w"> </span><span class="mi">1598918400000</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"USDT Flex Savings"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"USDT"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"rate"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.5</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Flex"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"txnType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"INVEST_SERVICE_TYPE_DEPOSIT"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"amount"</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"totalAmount"</span><span class="p">:</span><span class="w"> </span><span class="mi">2000</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"interestEarned"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.22</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"duration"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<p><code>GET /api/v3.2/invest/history</code></p>
+
+<p>Query investment history</p>
+<h3 id='request-parameters-5'>Request Parameters</h3>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>pageNumber</td>
+<td>integer</td>
+<td>No</td>
+<td>Page number to query, default to 1 (1-based)</td>
+</tr>
+<tr>
+<td>pageSize</td>
+<td>integer</td>
+<td>No</td>
+<td>Number of records in a page, default to 10, maximum 50</td>
+</tr>
+</tbody></table>
+<h3 id='response-content-6'>Response Content</h3>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>totalRows</td>
+<td>string</td>
+<td>Yes</td>
+<td>Total records</td>
+</tr>
+<tr>
+<td>pageNumber</td>
+<td>string</td>
+<td>Yes</td>
+<td>current page number</td>
+</tr>
+<tr>
+<td>pageSize</td>
+<td>string</td>
+<td>Yes</td>
+<td>Number of records in a page</td>
+</tr>
+<tr>
+<td>data</td>
+<td>InvestmentHistoryObject[]</td>
+<td>Yes</td>
+<td>Investment history object</td>
+</tr>
+</tbody></table>
+<h3 id='investmenthistoryobject'>InvestmentHistoryObject</h3>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>txnTime</td>
+<td>integer</td>
+<td>Yes</td>
+<td>Transaction time</td>
+</tr>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>Yes</td>
+<td>Product name</td>
+</tr>
+<tr>
+<td>currency</td>
+<td>string</td>
+<td>Yes</td>
+<td>Currency</td>
+</tr>
+<tr>
+<td>rate</td>
+<td>string</td>
+<td>Yes</td>
+<td>Interest rate</td>
+</tr>
+<tr>
+<td>type</td>
+<td>boolean</td>
+<td>Yes</td>
+<td>Product type</td>
+</tr>
+<tr>
+<td>txnType</td>
+<td>boolean</td>
+<td>Yes</td>
+<td>Transaction type</td>
+</tr>
+<tr>
+<td>amount</td>
+<td>boolean</td>
+<td>Yes</td>
+<td>Transaction amount</td>
+</tr>
+<tr>
+<td>totalAmount</td>
+<td>boolean</td>
+<td>Yes</td>
+<td>Total amount of the investment</td>
+</tr>
+<tr>
+<td>interestEarned</td>
+<td>boolean</td>
+<td>Yes</td>
+<td>Interest earned</td>
+</tr>
+<tr>
+<td>duration</td>
+<td>boolean</td>
+<td>Yes</td>
+<td>Duration</td>
+</tr>
+</tbody></table>
+
+      </div>
+      <div class="dark-box">
+          <div class="lang-selector">
+                <a href="#" data-language-name="json">json</a>
+          </div>
+      </div>
+    </div>
+    <script>
+const DEFAULT_LANG = 'en';
+const IS_DEV = false;
+const DOCS_PREFIX = IS_DEV ? '/' : '/docs/';
+const TAB_MAP = {
+  spot: {
+    en: 'Spot',
+    cn: '现货'
+  },
+  futures: {
+    en: 'Futures',
+    cn: '期货'
+  },
+  futuresV2_2: {
+    en: 'FuturesV2.2',
+    cn: '期货V2.2'
+  },
+  otc: {
+    en: 'OTC',
+    cn: '场外交易'
+  },
+  wallet: {
+    en: 'Wallet/Convert/Transfer',
+    cn: '钱包/转换/转账'
+  },
+  streaming: {
+    en: 'Streaming',
+    cn: '數據流'
+  },
+  fix: {
+    en: 'FIX',
+    cn: 'FIX'
+  },
+  earn: {
+    en: 'Earn',
+    cn: '賺幣'
+  }
+};
+
+function getUrlRelativePath() {
+  let url = document.location.toString();
+  let arrUrl = url.split('//');
+  let start = arrUrl[1].indexOf('/');
+  let relUrl = arrUrl[1].substring(start);
+  if (relUrl.indexOf('?') !== -1) {
+    relUrl = relUrl.split("?")[0];
+  }
+  if (relUrl.indexOf('#') !== -1) {
+    relUrl = relUrl.split('#')[0];
+  }
+  return relUrl;
+}
+
+function capitalizeFirstLetter(s) {
+  return s.charAt(0).toUpperCase() + s.slice(1);
+}
+
+function getLang() {
+  const url = getUrlRelativePath();
+  const isEN = url.indexOf('cn') === -1;
+  return isEN ? 'en' : 'cn';
+}
+
+function getTabTemplate(isTab, href, tabKey, tabText) {
+  const classList = isTab ? 'nav_cell nav_tab' : 'menu-row'
+  const idPrefix = isTab ? 'nav_link_' : 'menu-link-'
+  const linkClass = isTab ? 'nav-link' : 'menu-link'
+  return `
+    <span class="${classList}">
+      <a href="${href}" id="${idPrefix}${tabKey}" class="${linkClass}">${tabText}</a>
+    </span>
+  `
+}
+
+function generateNavHtml(lang, isTab) {
+  return Object.keys(TAB_MAP).map(tabKey => {
+    const tabText = TAB_MAP[tabKey][lang] || capitalizeFirstLetter(tabKey);
+    const href = `${DOCS_PREFIX}${tabKey}/${lang}/`;
+    return getTabTemplate(isTab, href, tabKey, tabText);
+  })
+}
+
+function addChangeLanguageLink(lang) {
+  // add change lang link in navbar.
+  const langText = lang === 'en' ? '中文' : 'English';
+  const langHref = lang === 'en' ? location.href.replace('/en/', '/cn/') : location.href.replace('/cn/', '/en/');
+  const langLink = `<a class="change-lang-link" href="${langHref}">${langText}</a>`;
+  $('#navBox').append(`<span class="nav_cell">${langLink}</span>`);
+}
+
+$(function() {
+  const lang = getLang();
+  $('#navBox').html(generateNavHtml(lang, true));
+  $('#menuDropdown').html(generateNavHtml(lang, false));
+  const tabList = Object.keys(TAB_MAP);
+  for (let i = 0; i < tabList.length; i ++) {
+    const tabKey = tabList[i];
+    if (location.href.indexOf(`/${tabKey}/`) > 0) {
+      $('.nav-link').removeClass('current');
+      $(`#nav_link_${tabKey}`).addClass('current');
+      $('.menu-link').removeClass('current');
+      $(`#menu-link-${tabKey}`).addClass('current');
+      break;
+    }
+  }
+  $('#menuDropdownBtn').click(() => {
+    $('.menu-dropdown').toggleClass('hide');
+  });
+  addChangeLanguageLink(lang);
+});
+  </script>
+  </body>
+</html>
